@@ -244,5 +244,52 @@ html, body {
 
 .swipetrade-card-image {
   max-width: 100%;
-  max-height: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+.swipetrade-card {
+  height: 600px;
+}
+
+.swipetrade-card > .swipetrade-card__title {
+  .background-color: red;
+}
+
+.swipetrade-card > .swipetrade-card-image {
+  background-size: cover;
+}
+
+.swipetrade-card > .swipetrade-card__cost-text {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.swipetrade-card > .swipetrade-card__item-text {
+  padding-left: 15px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.swipetrade-card > .swipetrade-card__description {
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+.swipetrade-card > .swipetrade-card__profile {
+  position: absolute;
+  right: 20px;
+  top: 160px;
+  height: 80px;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: red;
+  padding: 3px;
+}
+
+.swipetrade-card > .swipetrade-card__profile > img.swipetrade-card__profile-picture {
+  width: 80px;
+  border-radius: 50%;
 }
