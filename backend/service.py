@@ -5,6 +5,9 @@ handlers = {
 	"ping": logic.handle_ping
 }
 
+def init():
+	logic.init()
+
 def handle_json(json_request):
 	request = json.loads(json_request)
 	method = request["method"]
