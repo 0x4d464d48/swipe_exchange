@@ -8,7 +8,15 @@ def handle_ping(params):
 
 def handle_get_user(params):
 	user_email = params["user_email"]
-	return data.get_user_info(user_email)
+	return data.get_user_info(
+		user_email
+	)
+
+def handle_get_request(params):
+	user_email = params["user_email"]
+	return data.get_requests(
+		user_email
+	)
 
 def handle_create_listing(params):
 	seller_email = params["seller_email"]
@@ -24,4 +32,12 @@ def handle_create_listing(params):
 		listing_price,
 		listing_image,
 		listing_type
+	)
+
+def handle_create_request(params):
+	listing_timestamp = params["listing_timestamp"]
+	buyer_email = params["buyer_email"]
+	return data.add_request(
+		listing_timestamp,
+		buyer_email
 	)
