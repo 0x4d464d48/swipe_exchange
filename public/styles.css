@@ -249,28 +249,26 @@ html, body {
 }
 
 .swipetrade-card {
+  background-color: #8BC34A;
   height: 600px;
+  color: white;
 }
 
-.swipetrade-card > .swipetrade-card__title {
-  .background-color: red;
-}
-
-.swipetrade-card > .swipetrade-card-image {
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card-image {
   background-size: cover;
 }
 
-.swipetrade-card > .swipetrade-card__cost-text {
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__cost-text {
   margin: 0;
-  padding: 10px 15px;
-  font-size: 19px;
+  padding: 20px 15px;
+  font-size: 30px;
   font-weight: bolder;
 }
 
-.swipetrade-card > .swipetrade-card__item-text {
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__item-text {
   padding-left: 15px;
   padding-bottom: 5px;
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .swipetrade-card > .swipetrade-card__description {
@@ -285,11 +283,35 @@ html, body {
   height: 80px;
   z-index: 2;
   border-radius: 50%;
-  background-color: red;
+  background-color: #8BC34A;
   padding: 3px;
 }
 
 .swipetrade-card > .swipetrade-card__profile > img.swipetrade-card__profile-picture {
   width: 80px;
   border-radius: 50%;
+}
+
+.swipetrade-card > .swipetrade-card__buttons {
+  background-color: black;
+  margin: 0;
+  display: flex;
+}
+
+.swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__mark-for-later {
+  background-color: red;
+  margin: 0;
+  padding: 10px 0 0;
+  width: 50%;
+  flex: 0 0 50%;
+  color: white;
+}
+
+.swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__buy {
+  background-color: blue;
+  margin: 0;
+  padding: 10px 0 0;
+  width: 50%;
+  flex: 0 0 50%;
+  color: white;
 }
