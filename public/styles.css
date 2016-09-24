@@ -384,6 +384,7 @@ section.swipetrade-section-post > h1 {
   font-weight: lighter;
 }
 
+section.swipetrade-section-post > label,
 section.swipetrade-section-post > button.swipetrade-button {
   position: relative;
   top: 0;
@@ -409,4 +410,26 @@ section.swipetrade-section-post > button.swipetrade-button.swipetrade-button-nob
 
 section.swipetrade-section-post > button.swipetrade-button.swipetrade-button-nobackground:hover {
   background-color: #558B2F;
+}
+
+section.swipetrade-section-post > input#swipetrade-upload-img-input {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+section.swipetrade-section-post > label.swipetrade-button.swipetrade-label-box {
+  width: 60vh;
+  height: 55vh;
+  line-height: 55vh;
+  background-color: #8BC34A;
+}
+
+section.swipetrade-section-post > .swipetrade-price-input > input,
+section.swipetrade-section-post > .swipetrade-price-input > label,
+section.swipetrade-section-post > .swipetrade-price-input > span {
+  text-align: center;
 }

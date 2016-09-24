@@ -42,7 +42,11 @@ $(document).ready(function(){
     console.log("Woohoo" + $(this).text());
     activateTab(tabs[2]);
   });
-  
+
+  $("#swipetrade-upload-img-input").click(function() {
+    console.log("Woohoo2");
+    openFileOption();
+  });
   $("#swipetrade-button-upload-img").click(function() {
     console.log("Woohoo2");
     activateTab(tabs[3]);

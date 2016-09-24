@@ -267,7 +267,10 @@
     <div class="mdl-layout__tab-panel" id="post-new-upload-img">
       <section class="swipetrade-section-post">
         
-        <h1>Step 2: What are you selling?</h1>
+        <h1>Step 2: Upload an image</h1>
+        
+        <input type="file" id="swipetrade-upload-img-input"></input>
+        <label for="swipetrade-upload-img-input" class="swipetrade-button swipetrade-label-box mdl-button mdl-js-button">Select Image</label>
         
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-upload-img-back">Back</button>
         
@@ -281,6 +284,13 @@
         
         <h1>Step 3: Select a price for what you are selling</h1>
         
+        <div class="swipetrade-price-input mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="swipetrade-price-input">
+          <label class="mdl-textfield__label" for="sample2">Price</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <br>
+        
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-price-back">Back</button>
         
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-price">Next</button>
@@ -293,6 +303,12 @@
         
         <h1>Step 4: Add some description for what you are selling</h1>
         
+        <div class="swipetrade-price-input mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="swipetrade-description-input">
+          <label class="mdl-textfield__label" for="sample2">Description</label>
+        </div>
+        <br>
+        
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-description-back">Back</button>
         
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-description">Next</button>
@@ -303,7 +319,39 @@
     <div class="mdl-layout__tab-panel" id="post-new-overview">
       <section class="swipetrade-section-post">
         
-        <h1>Summary</h1>
+        <h1>Here's how your post looks:</h1>
+        
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col"></div>
+          <div class="swipetrade-card mdl-card mdl-cell mdl-cell--8-col mdl-shadow--2dp" style="height:350px">
+            
+            <div class="swipetrade-card__profile">                
+                <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+            </div>
+            
+            <div class="swipetrade-card__image-container">
+              <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
+              </div>
+            </div>
+            
+            <div class="swipetrade-card__main-content mdl-shadow--2dp">
+              <p class="swipetrade-card__cost-text">400 CAD</p>
+              <p class="swipetrade-card__distance-text">Within 300m</p>
+              <p class="swipetrade-card__item-text">emonda 54cm</p>
+            </div>
+            
+            <div class="swipetrade-card__buttons mdl-shadow--3dp">
+              <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                Mark for Later
+              </a>
+              <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
+                Buy Now
+              </a>
+            </div>
+            
+          </div> <!-- swipetrade-card -->
+          <div class="mdl-cell mdl-cell--2-col"></div>
+        </div>
         
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-overview-back">Back</button>
         
