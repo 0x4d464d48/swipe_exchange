@@ -12,6 +12,7 @@ Listing
 - Email of seller
 - Name
 - Description
+- Price
 - Image (imgur link)
 - Type
 - Buyer (NULL if not bought yet, E-mail of buyer when bought)
@@ -19,5 +20,5 @@ Listing
 Buy Request
 * Timestamp of request
 - Timestamp of listing (identifies listing)
-- Seller E-mail
 - Buyer E-mail
+- Read/Unread flag

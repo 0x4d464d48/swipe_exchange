@@ -1,0 +1,150 @@
+//Method to get user
+//Gets a user given their E-mail address
+//REQUEST
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"method": "get_user",
+	"params": {
+		"user_email": "jeremy.quicklearner@gmail.com"
+	}
+}
+//RESPONSE
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"result": {
+		"user_email": "jeremy.quicklearner@gmail.com",
+		"user_first_name": "Jeremy",
+		"user_last_name": "Lerner",
+		"user_image": "http://www.ingur.com/badonk",
+		"user_location": "Vancouver",
+		"user_rating": 5		
+	}
+}
+
+//Method to get listings
+// Retrieves a list of listings based on three filters: timestamp, seller E-mail, and listing type
+//REQUEST
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"method": "get_listings",
+	"params": {
+		"listing_timestamp": null,
+		"seller_email": null,
+		"listing_type": null
+	}
+}
+//RESPONSE
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"result": [
+		{
+			"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
+			"listing_seller": "jeremy.quicklearner@gmail.com",
+			"listing_name": "Shoes for sale",
+			"listing_description": "I'm selling my shoes. they're cool.",
+			"listing_price": 1250, //$12.50
+			"listing_image": "http://www.imgur.com/bazoop",
+			"listing_type": "Footwear",
+			"listing_buyer": null
+		},
+		{
+			"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
+			"listing_seller": "jeremy.quicklearner@mgail.com",
+			"listing_name": "Textbook for sale",
+			"listing_description": "I'm selling my textbook. It's Big Java by Horstmann",
+			"listing_price": 15000, //$150.00
+			"listing_image": "http://www.imgur.com/bazooper",
+			"listing_type": "Literature",
+			"listing_buyer": null
+		}
+	]
+}
+
+//Method to get requests
+//Retrieves all pending requests made to listings created by a given user
+//REQUEST
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"method": "get_requests",
+	"params": {
+		"user_email": "jeremy.quicklearner@gmail.com"
+	}
+}
+//RESPONSE
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"result": [
+		{
+			"request_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
+			"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
+			"seller_email": "jeremy.quicklearner@gmail.com",
+			"buyer_email": "mathcurt@gmail.com",
+			"request_is_read": true
+		},
+		{
+			"request_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
+			"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
+			"seller_email": "jeremy.quicklearner@gmail.com",
+			"buyer_email": "derekchan1994@gmail.com",
+			"request_is_read": false
+		},
+	]
+}
+
+//Method to create a listing
+//Creates a listing given all its properties
+//REQUEST
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"method": "create_listing",
+	"params": {
+		"seller_email": "jeremy.quicklearner@gmail.com",
+		"listing_name": "Selling my Raspberry Pi",
+		"listing_description": "Raspberry Pi Model B for sale. Good condition.",
+		"listing_price": 3000, //$30.00
+		"listing_image": "http://www.imgur.com/barzarple",
+		"listing_type": "Technology"
+	}
+}
+//RESPONSE
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"result": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>
+}
+
+//Method to create a request
+//Creates a request for a given listing with a given buyer
+//REQUEST
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"method": "create_request",
+	"params": {
+		"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
+		"buyer_email": "mathcurt@gmail.com"
+	}
+}
+//RESPONSE
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"result": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>
+}
+
+//Notification signifying there is a new request
+{
+	"jsonrpc": "2.0",
+	"method": "hey_request",
+	"params": {
+		"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
+		"buyer_email": "mathcurt@gmail.com"
+	}
+}
