@@ -1,0 +1,39 @@
+[
+    {
+        "email": "jeremy.quicklearner@gmail.com",
+        "first_name": "Jeremy",
+        "last_name": "Lerner",
+        "image": "http://www.imgur.com/badonk",
+        "location": "Telus Garden",
+        "aggregate_rating": 22,
+        "number_of_ratings": 5
+    },
+    {
+        "email": "quicklearner@gmail.com",
+        "first_name": "Jeremy",
+        "last_name": "Lerner",
+        "image": "http://www.imgur.com/badonk",
+        "location": "Telus Garden",
+        "aggregate_rating": 22,
+        "number_of_ratings": 5
+    },
+    {
+        "email": "jeremy@gmail.com",
+        "first_name": "Jeremy",
+        "last_name": "Lerner",
+        "image": "http://www.imgur.com/badonk",
+        "location": "Telus Garden",
+        "aggregate_rating": 22,
+        "number_of_ratings": 5
+    },
+    {
+        "email": "jql@gmail.com",
+        "first_name": "Jeremy",
+        "last_name": "Lerner",
+        "image": "http://www.imgur.com/badonk",
+        "location": "Telus Garden",
+        "aggregate_rating": 22,
+        "number_of_ratings": 5
+    }
+]
+
