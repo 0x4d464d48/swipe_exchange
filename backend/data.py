@@ -29,8 +29,8 @@ def add_listing(seller_email,product_name,description,price,image,listing_type):
     t = int(time.time())
     listing = {
                 "timestamp": t,
-                "seller": email,
-                "name": name,
+                "seller": seller_email,
+                "name": product_name,
                 "description": description,
                 "price": price, 
                 "image": image,
