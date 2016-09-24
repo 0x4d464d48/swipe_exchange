@@ -1,5 +1,5 @@
 from flask import Flask, request, send_from_directory
-from service import handle_json
+import service
 app = Flask(__name__)
 
 @app.route("/<path:path>")
@@ -14,8 +14,8 @@ def send_index():
 @app.route('/jsonrpc', methods=['POST'])
 def jsonrpc():
     json_from_client = request.form["json"]
-    return service.handle_json(json_from_client)
+    return (service.handle_json(json_from_client), None)
 
 if __name__ == "__main__":
-
-    app.run(host="0.0.0.0", port=int("80"))
+	service.init()
+	app.run(host="0.0.0.0", port=int("80"))
