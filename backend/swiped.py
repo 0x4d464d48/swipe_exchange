@@ -17,5 +17,5 @@ def jsonrpc():
     return (service.handle_json(json_from_client), None)
 
 if __name__ == "__main__":
-
-    app.run(host="0.0.0.0", port=int("80"))
+	service.init()
+	app.run(host="0.0.0.0", port=int("80"))
