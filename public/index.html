@@ -16,39 +16,46 @@
   limitations under the License
 -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>SwipeTrade</title>
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>SwipeTrade</title>
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
-    <link rel="shortcut icon" href="images/favicon.png">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.light_green-pink.min.css">
+  <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.light_green-pink.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
+  <style>
     #view-source {
       position: fixed;
       display: block;
@@ -58,23 +65,34 @@
       margin-bottom: 40px;
       z-index: 900;
     }
-    </style>
-  </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Swipe Exchange</h3>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#browse" class="mdl-layout__tab is-active">Browse</a>
-          <a href="#post" class="mdl-layout__tab">Post</a>
-          <a href="#profile" class="mdl-layout__tab">Profile</a>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+  </style>
+
+  <!-- All the swipe guts (ORDER MATTERS!) -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script type="text/javascript" src="js/swipe.js"></script>
+  <script type="text/javascript" src="js/jquery.collapse.js"></script>
+  <script type="text/javascript" src="js/swipetrade.js"></script>
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h3>Swipe Exchange</h3>
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <a href="#browse" class="mdl-layout__tab is-active" id="browse">Browse</a>
+        <a href="#post" class="mdl-layout__tab" id="post">Post</a>
+        <a href="#profile" class="mdl-layout__tab" id="profile">Profile</a>
+        <a href="#swipe" class="mdl-layout__tab" id="swipe">Swipe</a>
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent"
+          id="add">
             <i class="material-icons" role="presentation">add</i>
             <span class="visuallyhidden">Add</span>
           </button>
@@ -89,7 +107,7 @@
         
         <div class="mdl-layout__tab-panel is-active" id="browse">
           
-          <section class="section--center mdl-grid mdl-shadow--2dp">
+          <section class="swipetrade-main-section section--center mdl-grid mdl-shadow--2dp">
             
             
             
@@ -101,6 +119,11 @@
                     <input class="mdl-textfield__input" type="text" id="sample1">
                     <label class="mdl-textfield__label" for="sample1">What are you looking for?</label>
                   </div>
+                </form>
+              </div>
+              <div class="mdl-card__actions">
+                <div class="swipetrade-collapsible">
+                  <a href="#" class="mdl-button ">More Filters</a>
                   <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col-phone mdl-textfield mdl-js-textfield">
                       <input class="mdl-textfield__input" type="text" id="sample1">
@@ -111,27 +134,27 @@
                       <label class="mdl-textfield__label" for="sample1">To</label>
                     </div>
                   </div>
-                </form>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">More Filters</a>
+                </div>
               </div>
             </div>
             
             <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
               
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <div class="swipetrade-card-image" style="height:200px; background-image: url('http://i.imgur.com/9p9tA0o.jpg');">
+              <div class="swipetrade-card__profile">                
+                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+              </div>
+              
+              <div class="swipetrade-card__image-container">
+                <div class="swipetrade-card-image" style="background-image: url('http://i.imgur.com/9p9tA0o.jpg');">
                 </div>
-                
+              </div>
+              
+              <div class="swipetrade-card__main-content mdl-shadow--2dp">
                 <p class="swipetrade-card__cost-text">75 CAD</p>
+                <p class="swipetrade-card__distance-text">Within 300m</p>
                 <p class="swipetrade-card__item-text">Brand New Bike</p>
               </div>
               
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
               <div class="swipetrade-card__buttons mdl-shadow--3dp">
                 <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
                   Mark for Later
@@ -140,23 +163,26 @@
                   Buy Now
                 </a>
               </div>
-            </div> <!-- swipetrade-card -->
               
+            </div> <!-- swipetrade-card -->
             
             <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
               
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <div class="swipetrade-card-image" style="height:200px; background-image: url('http://www.devinci.com/archive/2009/hybride/OSLO.jpg');">
+              <div class="swipetrade-card__profile">                
+                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+              </div>
+              
+              <div class="swipetrade-card__image-container">
+                <div class="swipetrade-card-image" style="background-image: url('http://www.devinci.com/archive/2009/hybride/OSLO.jpg');">
                 </div>
-                
+              </div>
+              
+              <div class="swipetrade-card__main-content mdl-shadow--2dp">
                 <p class="swipetrade-card__cost-text">250 CAD</p>
+                <p class="swipetrade-card__distance-text">Within 300m</p>
                 <p class="swipetrade-card__item-text">7yr bike from craihgslist</p>
               </div>
               
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
               <div class="swipetrade-card__buttons mdl-shadow--3dp">
                 <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
                   Mark for Later
@@ -165,20 +191,24 @@
                   Buy Now
                 </a>
               </div>
+              
             </div> <!-- swipetrade-card -->
             
             <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
               
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <div class="swipetrade-card-image" style="height:200px; background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
-                </div>
-                
-                <p class="swipetrade-card__cost-text">400 CAD</p>
-                <p class="swipetrade-card__item-text">emonda 54cm</p>
-              </div>
-              
               <div class="swipetrade-card__profile">                
                   <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+              </div>
+              
+              <div class="swipetrade-card__image-container">
+                <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
+                </div>
+              </div>
+              
+              <div class="swipetrade-card__main-content mdl-shadow--2dp">
+                <p class="swipetrade-card__cost-text">400 CAD</p>
+                <p class="swipetrade-card__distance-text">Within 300m</p>
+                <p class="swipetrade-card__item-text">emonda 54cm</p>
               </div>
               
               <div class="swipetrade-card__buttons mdl-shadow--3dp">
@@ -189,6 +219,7 @@
                   Buy Now
                 </a>
               </div>
+              
             </div> <!-- swipetrade-card -->
               
           </section>
@@ -199,80 +230,150 @@
         
         
         <div class="mdl-layout__tab-panel" id="post">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="demo-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">BIKE</h2>
-                <h3 class="mdl-card__subtitle-text">$400</h3>
+          <section class="section--center mdl-grid">
+            
+            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
+              
+              <div class="swipetrade-card__profile">                
+                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
               </div>
-              <img src="https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg" class="swipetrade-card-image">
-              <div class="mdl-card__supporting-text">
-                emonda 54cm
+              
+              <div class="swipetrade-card__image-container">
+                <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
+                </div>
               </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                  <i class="material-icons">clear</i>
+              
+              <div class="swipetrade-card__main-content mdl-shadow--2dp">
+                <p class="swipetrade-card__cost-text">400 CAD</p>
+                <p class="swipetrade-card__distance-text">Within 300m</p>
+                <p class="swipetrade-card__item-text">emonda 54cm</p>
+              </div>
+              
+              <div class="swipetrade-card__buttons mdl-shadow--3dp">
+                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Mark for Later
                 </a>
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                  <i class="material-icons">done</i>
+                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Buy Now
                 </a>
               </div>
-              <div class="mdl-card__menu">
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                  <i class="material-icons">account_circle</i>
-                </button>
-              </div>
+              
+            </div> <!-- swipetrade-card -->
+            
+        </section>
+      </div>
+
+
+      <!-- Profile -->
+
+      <div class="mdl-layout__tab-panel" id="profile">
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+            <i class="material-icons">play_circle_filled</i>
+          </header>
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__supporting-text">
+              <h4>Features</h4>
+              Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor
+              eu fugiat consectetur elit cillum esse.
             </div>
-          </section>
-        </div>
-        
-        
-        <!-- Profile -->
-        
-        
-        <div class="mdl-layout__tab-panel" id="profile">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">play_circle_filled</i>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
+            <div class="mdl-card__actions">
+              <a href="#" class="mdl-button">Read our features</a>            </div>
+          </div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
               <i class="material-icons">more_vert</i>
             </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-        </div>
-        
-        
-        <!-- Footer -->
-        
-        
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
-              &copy; SwipeTrade 2016
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
+            <li class="mdl-menu__item">Lorem</li>
+            <li class="mdl-menu__item" disabled>Ipsum</li>
+            <li class="mdl-menu__item">Dolor</li>
+          </ul>
+        </section>
+      </div>
+
+
+      <!-- Swipe Demo -->
+
+      <div class="mdl-layout__tab-panel" id="swipe">
+        <!-- Leave empty. Carosel below is displayed -->
+      </div>
+
+
+      <!-- Footer -->
+      <div class="mdl-layout__tab-panel" id="swipe">
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <div class="demo-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">BIKE</h2>
+              <h3 class="mdl-card__subtitle-text">$400</h3>
             </div>
-            <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://github.com/0x4d464d48/swipe_exchange">Source</a></li>
-            </ul>
+            <img src="https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg" class="swipetrade-card-image">
+            <div class="mdl-card__supporting-text">
+              emonda 54cm
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">clear</i>
+              </a>
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">done</i>
+              </a>
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                  <i class="material-icons">account_circle</i>
+                </button>
+            </div>
           </div>
-        </footer>
-        
-      </main>
-    </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
-    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-  </body>
+        </section>
+      </div>
+
+          <div class="swipe">
+                        <div class="swipetrade-card-container" style="width:20%">
+              <img src="http://www.devinci.com/archive/2009/hybride/OSLO.jpg" class="swipetrade-card-image">
+            </div>
+
+                        <div class="swipetrade-card-container">
+              <img src="http://www.devinci.com/archive/2009/hybride/OSLO.jpg" class="swipetrade-card-image">
+            </div>
+                        <div class="swipetrade-card-container">
+              <img src="http://www.devinci.com/archive/2009/hybride/OSLO.jpg" class="swipetrade-card-image">
+            </div>
+                        <div class="swipetrade-card-container">
+              <img src="http://www.devinci.com/archive/2009/hybride/OSLO.jpg" class="swipetrade-card-image">
+            </div>
+                        <div class="swipetrade-card-container">
+              <img src="http://www.devinci.com/archive/2009/hybride/OSLO.jpg" class="swipetrade-card-image">
+            </div>
+                        <div class="swipetrade-card-container">
+              <img src="http://www.devinci.com/archive/2009/hybride/OSLO.jpg" class="swipetrade-card-image">
+            </div>
+                        <div class="swipetrade-card-container">
+              <img src="http://www.devinci.com/archive/2009/hybride/OSLO.jpg" class="swipetrade-card-image">
+            </div>
+                        <div class="swipetrade-card-container">
+              <img src="http://www.devinci.com/archive/2009/hybride/OSLO.jpg" class="swipetrade-card-image">
+            </div>
+          </div>
+          </div>
+
+
+
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer--bottom-section">
+          <div class="mdl-logo">
+            &copy; SwipeTrade 2016
+          </div>
+          <ul class="mdl-mega-footer--link-list">
+            <li><a href="https://github.com/0x4d464d48/swipe_exchange">Source</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source"
+    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+
 </html>

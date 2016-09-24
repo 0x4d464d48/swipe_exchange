@@ -237,18 +237,11 @@ html, body {
   z-index: 99;
 }
 
-.swipetrade-card-container {
-  height: 175px;
-  width: 100%;
-}
-
-.swipetrade-card-image {
-  max-width: 100%;
-  height: 250px;
-  text-align: center;
-}
-
 /* SwipeTrade card styling */
+
+section.section--center.swipetrade-main-section {
+  max-width: 1024px;
+}
 
 .swipetrade-card {
   background-color: #8BC34A;
@@ -256,59 +249,82 @@ html, body {
   color: white;
 }
 
-.swipetrade-card > .swipetrade-card__main-content {
-  z-index: 1;
-}
-
-.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card-image {
-  background-size: cover;
-}
-
-.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__cost-text {
-  margin: 0;
-  padding: 20px 15px;
-  font-size: 30px;
-  font-weight: bolder;
-}
-
-.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__item-text {
-  padding-left: 15px;
-  padding-bottom: 5px;
-  font-size: 24px;
-  font-weight: lighter;
-}
-
-.swipetrade-card > .swipetrade-card__description {
-  padding-left: 5px;
-  font-size: 12px;
-}
-
+/* SwipeTrade Card Profile */
 .swipetrade-card > .swipetrade-card__profile {
   position: absolute;
-  right: 20px;
-  top: 160px;
-  height: 80px;
+  right: 5%;
+  top: 45%;
+  height: 20%;
   z-index: 2;
   border-radius: 50%;
   background-color: #8BC34A;
-  padding: 3px;
+  padding: 4px;
 }
 
 .swipetrade-card > .swipetrade-card__profile > img.swipetrade-card__profile-picture {
-  width: 80px;
+  height: 100%;
   border-radius: 50%;
 }
+
+/* Image */
+.swipetrade-card > .swipetrade-card__image-container {
+  height: 55%;
+}
+
+.swipetrade-card > .swipetrade-card__image-container > .swipetrade-card-image {
+  background-size: cover;
+  background-position:center;
+  height: 100%;
+}
+
+ /* Content */
+.swipetrade-card > .swipetrade-card__main-content {
+  z-index: 1;
+  height: 33%;
+}
+
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__cost-text,
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__distance-text,
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__item-text {
+  margin: 0;
+  padding: 5% 0 0 10px;
+}
+
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__cost-text,
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__distance-text {
+  display: inline-block;
+}
+
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__cost-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__distance-text {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__item-text {
+  padding-bottom: 5%;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* Buttons */
 
 .swipetrade-card > .swipetrade-card__buttons {
   background-color: black;
   margin: 0;
   display: flex;
+  height: 12%;
 }
 
 .swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__mark-for-later,
 .swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__buy {
   margin: 0;
   padding: 5px 0 0;
+  height: 100%;
   width: 50%;
   flex: 0 0 50%;
   color: white;
@@ -321,6 +337,6 @@ html, body {
 }
 
 .swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__buy {
-  background-color: #558B2F;
+  background-color: #689F38;
   font-weight: bold;
 }
