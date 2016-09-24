@@ -80,27 +80,59 @@ def get_user_info(user_email):
 def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price):
     """Returns a python list of dictionarys with 
     keys for all entries in a listing"""
-    return []
-
-    listing_cursor = db.listings.find({})
+    listing_cursor = db.listings.find()
 
     listings = []
-    for listings in listing_cursor:
-        listings.append(request)
+    for listing in listing_cursor:
+        listings.append(listing)
 
     listing_cursor.close()
 
-    filtered_listings = filter_listings(listings)
+    filtered_listings = filter_listings(listings,
+            listing_timestamp,seller_email,listing_type,max_price,min_price)
 
     return process_listings(listings)
 
 #helper for get_listings
 def filter_listings(listings,listing_timestamp,seller_email,listing_type,max_price,min_price):
     filtered_listings = []
-    pass
+    for listing in listings:
+        if listing["buyer"] is not None:
+            continue
+
+        if not (listing_timestamp is None) or (listing["timestamp"] == listing_timestamp):
+            continue
+
+        if not (seller_email is None) or (listing["seller"] == seller_email):
+            continue
+
+        if not (listing_type is None) or (listing["type"] == listing_type):
+            continue
+
+        if not (max_price is None) or (min_price is None) \
+                or listing["price"] > max_price or listing["price"] < min_price["price"]:
+            continue
+
+        filtered_listings.append(listings)
+
+    return filtered_listings
+
 
 def process_listings(listings):
-    pass
+    processed_listings = []
+    for listing in listings:
+        processed_listings.append({
+            "listing_timestamp": listing["timestamp"],
+            "listing_seller": listing["seller"],
+            "listing_name": listing["description"],
+            "listing_description": listing["description"],
+            "listing_price": listing["price"],
+            "listing_image": listing["image"],
+            "listing_type": listing["type"],
+            "listing_buyer": None
+            })
+
+    return processed_listings
 
 def get_requests(user_email):
     """Returns a python list of dictionarys with 
@@ -133,4 +165,5 @@ if __name__ == "__main__":
     add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",1000,"soul.jpg","personal items")
     add_request(1474746464,"mathcurt@gmail.com")
     #print(get_user_info("jeremy.quicklearner@gmail.com"))
-    print(get_requests("jeremy.quicklearner@gmail.com"))
+    #print(get_requests("jeremy.quicklearner@gmail.com"))
+    print(get_listings(None,None,None,None,None))
