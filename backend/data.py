@@ -7,7 +7,8 @@ def init():
     global client
     global db 
     client = pm.MongoClient(MONGOD_IP,MONGOD_PORT)
-    db = client.db[DB_NAME]
+    db = client[DB_NAME]
+    print(type(db))
     populate_db()
 
 def populate_db():
@@ -48,10 +49,9 @@ def get_requests(email):
     pass
 
     
-
-
 def nuke_db():
-    pass
+    for collection_name in COLLECTIONS:
+        db.drop_collection(collection_name)
     
     
 
@@ -68,3 +68,4 @@ def nuke_db():
 
 if __name__ == "__main__":
     init()
+    nuke_db()
