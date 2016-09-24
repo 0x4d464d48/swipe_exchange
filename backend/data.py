@@ -1,5 +1,6 @@
 import json
 import pymongo as pm 
+import time
 from constants import *
 
 #module initialization function
@@ -7,7 +8,8 @@ def init():
     global client
     global db 
     client = pm.MongoClient(MONGOD_IP,MONGOD_PORT)
-    db = client.db[DB_NAME]
+    db = client[DB_NAME]
+    print(type(db))
     populate_db()
 
 def populate_db():
@@ -19,39 +21,64 @@ def populate_db():
         collection = db[collection_name]
 
         result = collection.insert_many(json_data)
-        print(result.inserted_ids)
-
         f.close()
     
-def add_listing(email,name,description,price,image,listing_type):
+def add_listing(seller_email,product_name,description,price,image,listing_type):
     """Returns the unix timestamp of the listing"""
-    pass
+    #TODO: Add check for identical timestamps
+    t = int(time.time())
+    listing = {
+                "timestamp": t,
+                "seller": seller_email,
+                "name": product_name,
+                "description": description,
+                "price": price, 
+                "image": image,
+                "type": listing_type,
+                "buyer": None
+            }
+    db.listings.insert_one(listing)
 
-
-def add_request(timestamp,email):
+def add_request(listing_timestamp,buyer_email):
     """Returns the unix timestamp of the listing"""
+    #TODO: Add check for identical timestamps
     pass
+    
+    listing = db.listings.find_one({"timestamp": listing_timestamp})
+    if listing is not None:
+        listing
+    else:
+        raise Exeption("Listing not found")
 
-def get_user_info(email):
+    t = time.time()
+    request = {
+                "request_timestamp": 1474746467,
+                "listing_timestamp": listing_timestamp,
+                "seller_email": "jeremy.quicklearner@gmail.com",
+                "buyer_email": buyer_email,
+                "status": 0
+            }
+    db.requests.insert_one()
+
+def get_user_info(user_email):
     """Returns a python dict with a user's information"""
     pass
     
 
-def get_listings(timestamp,seller_email,listing_type,max_price,min_price):
+def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price):
     """Returns a python list of dictionarys with 
     keys for all entries in a listing"""
     pass
 
-def get_requests(email):
+def get_requests(user_email):
     """Returns a python list of dictionarys with 
     keys for all entries in a listing"""
     pass
 
     
-
-
 def nuke_db():
-    pass
+    for collection_name in COLLECTIONS:
+        db.drop_collection(collection_name)
     
     
 
@@ -68,3 +95,5 @@ def nuke_db():
 
 if __name__ == "__main__":
     init()
+    add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",1000,"soul.jpg","personal items")
+    nuke_db()
