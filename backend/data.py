@@ -85,12 +85,13 @@ def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price
 def get_requests(user_email):
     """Returns a python list of dictionarys with 
     keys for all entries in a listing"""
-    requests = db.requests.find({"seller_email": user_email})
+    request_cursor = db.requests.find({"seller_email": user_email})
 
-    request_list = []
-    for requests in requests:
-        request_list.append("")
+    requests = []
+    for request in request_cursor:
+        requests.append(request)
 
+    request_cursor.close()
     
     for request in requests:
         status = request["status"]
@@ -111,4 +112,3 @@ if __name__ == "__main__":
     add_request(1474746464,"mathcurt@gmail.com")
     #print(get_user_info("jeremy.quicklearner@gmail.com"))
     print(get_requests("jeremy.quicklearner@gmail.com"))
-    nuke_db()
