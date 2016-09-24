@@ -1,4 +1,4 @@
-
+import json
 import pymongo as pm 
 from constants import *
 
@@ -8,24 +8,21 @@ def init():
     global db 
     client = pm.MongoClient(MONGOD_IP,MONGOD_PORT)
     db = client.db[DB_NAME]
+    populate_db()
 
 def populate_db():
+    files = []
+    for collection_name in COLLECTIONS:
+        f = open(collection_name+".json")
+        json_data = json.load(f)
 
-    #for f,col in FILES
+        collection = db[collection_name]
 
-    requests_file = open(REQUESTS)
-    listings_file = open(LISTINGS)
-    users_file  = open(USERS)
+        result = collection.insert_many(json_data)
+        print(result.inserted_ids)
 
-    requests_json = json.load(requests_file)
-    listings_json = json.load(listings_file)
-    users_json = json.load(users_file)
+        f.close()
     
-
-    requests_col = db["requests"]
-    listings_col = db["listings"]
-    users_col = db["users"]
-
 def add_listing(email,name,description,price,image,listing_type):
     """Returns the unix timestamp of the listing"""
     pass
