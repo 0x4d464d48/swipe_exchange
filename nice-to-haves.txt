@@ -4,5 +4,5 @@ TOO BIG
 
 CAN DO
 
-- Bookmarks/Favorites
 - Check whether requests I've made have been seen by their sellers
+- Bookmark my favourite listings

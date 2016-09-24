@@ -21,4 +21,4 @@ Buy Request
 * Timestamp of request
 - Timestamp of listing (identifies listing)
 - Buyer E-mail
-- Read/Unread flag
+- Unseen/Notified/Seen enum
