@@ -37,6 +37,7 @@ def add_listing(seller_email,product_name,description,price,image,listing_type):
                 "buyer": None
             }
     db.listings.insert_one(listing)
+    return t
 
 def add_request(listing_timestamp,buyer_email):
     """Returns the unix timestamp of the listing"""
@@ -57,9 +58,11 @@ def add_request(listing_timestamp,buyer_email):
                 "status": 0
             }
     db.requests.insert_one(request)
+    return t
 
 def get_user_info(user_email):
     """Returns a python dict with a user's information"""
+    user = db.listings.find_one({"timestamp": listing_timestamp})
     pass
     
 
