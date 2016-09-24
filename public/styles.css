@@ -248,10 +248,16 @@ html, body {
   text-align: center;
 }
 
+/* SwipeTrade card styling */
+
 .swipetrade-card {
   background-color: #8BC34A;
   height: 600px;
   color: white;
+}
+
+.swipetrade-card > .swipetrade-card__main-content {
+  z-index: 1;
 }
 
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card-image {
@@ -268,7 +274,8 @@ html, body {
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__item-text {
   padding-left: 15px;
   padding-bottom: 5px;
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 .swipetrade-card > .swipetrade-card__description {
@@ -298,20 +305,22 @@ html, body {
   display: flex;
 }
 
-.swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__mark-for-later {
-  background-color: red;
+.swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__mark-for-later,
+.swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__buy {
   margin: 0;
-  padding: 10px 0 0;
+  padding: 5px 0 0;
   width: 50%;
   flex: 0 0 50%;
   color: white;
+  border-radius: 0;
+}
+
+.swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__mark-for-later{
+  background-color: #C5E1A5;
+  font-weight: bold;
 }
 
 .swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__buy {
-  background-color: blue;
-  margin: 0;
-  padding: 10px 0 0;
-  width: 50%;
-  flex: 0 0 50%;
-  color: white;
+  background-color: #558B2F;
+  font-weight: bold;
 }
