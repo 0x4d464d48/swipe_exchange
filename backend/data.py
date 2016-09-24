@@ -62,8 +62,8 @@ def add_request(listing_timestamp,buyer_email):
 
 def get_user_info(user_email):
     """Returns a python dict with a user's information"""
-    user = db.listings.find_one({"timestamp": listing_timestamp})
     pass
+    user = db.listings.find_one({"timestamp": listing_timestamp})
     
 
 def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price):
