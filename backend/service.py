@@ -2,7 +2,8 @@ import json
 import logic
 
 handlers = {
-	"ping": logic.handle_ping
+	"ping":				logic.handle_ping,
+	"create_listing":	logic.handle_create_listing
 }
 
 def init():
