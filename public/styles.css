@@ -370,9 +370,24 @@ section.section--center.swipetrade-main-section {
   font-weight: bold;
 }
 
-/* Button */
-.mdl-demo section > button.swipetrade-button {
+/*****************************************************************************/
+/* Post section */
+/*****************************************************************************/
+section.swipetrade-section-post {
+  padding: 20px 10%;
+  text-align: center;
+}
+
+section.swipetrade-section-post > h1 {
+  font-size: 34px;
+  font-weight: lighter;
+}
+
+section.swipetrade-section-post > button.swipetrade-button {
   position: relative;
   top: 0;
   right: 0;
+  padding: 2% 10%;
+  width: 40%;
+  height: auto;
 }
