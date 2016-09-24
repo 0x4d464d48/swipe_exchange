@@ -10,4 +10,8 @@ $(document).ready(function(){
         }
       });
     
+  $("#swipetrade-filter-input").keyup(function(event) {
+    console.log("Input contents: %s", $(this).val());
+  });
+    
 });
