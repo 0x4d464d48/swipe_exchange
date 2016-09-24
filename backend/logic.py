@@ -6,6 +6,10 @@ def init():
 def handle_ping(params):
 	return 0
 
+def handle_get_user(params):
+	user_email = params["user_email"]
+	return data.get_user_info(user_email)
+
 def handle_create_listing(params):
 	seller_email = params["seller_email"]
 	listing_name = params["listing_name"]

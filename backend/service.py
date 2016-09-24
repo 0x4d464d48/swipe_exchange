@@ -3,6 +3,7 @@ import logic
 
 handlers = {
 	"ping":				logic.handle_ping,
+	"get_user":			logic.handle_get_user,
 	"create_listing":	logic.handle_create_listing
 }
 
