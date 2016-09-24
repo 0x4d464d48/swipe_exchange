@@ -155,6 +155,15 @@
 	"result": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>
 }
 
+//Notification for testing
+{
+	"jsonrpc": "2.0",
+	"method": "hey_ping"
+	"params": {
+		"user_email": "test"
+	}
+}
+
 //Notification signifying there is a new request
 {
 	"jsonrpc": "2.0",
