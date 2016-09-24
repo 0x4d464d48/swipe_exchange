@@ -24,7 +24,7 @@
 }
 
 //Method to get listings
-// Retrieves a list of listings based on three filters: timestamp, seller E-mail, and listing type
+// Retrieves a list of listings based on three filters: timestamp, seller E-mail, price, and listing type
 //REQUEST
 {
 	"jsonrpc": "2.0",
@@ -33,7 +33,9 @@
 	"params": {
 		"listing_timestamp": null,
 		"seller_email": null,
-		"listing_type": null
+		"listing_type": null,
+		"listing_price_min": 0,
+		"listing_price_max": 999999
 	}
 }
 //RESPONSE
