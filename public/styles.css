@@ -244,16 +244,16 @@ section.section--center.swipetrade-main-section {
 }
 
 /* SwipeTrade Filter */
-#swipetrade-filter-input {
+#swipetrade-filter-card {
   min-height: 0; /* Reset */
 }
 
-#swipetrade-filter-input > .swipetrade-filter-center {
+#swipetrade-filter-card > .swipetrade-filter-center {
   margin: 0 auto;  
 }
 
-#swipetrade-filter-input > .swipetrade-filter-center > .mdl-textfield__label,
-#swipetrade-filter-input > .swipetrade-filter-center > .mdl-textfield__input {
+#swipetrade-filter-card > .swipetrade-filter-center > .mdl-textfield__label,
+#swipetrade-filter-card > .swipetrade-filter-center > .mdl-textfield__input {
   /*height: 100%;*/
   font-size: 20px;
   text-align: center;
