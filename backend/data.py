@@ -62,8 +62,18 @@ def add_request(listing_timestamp,buyer_email):
 
 def get_user_info(user_email):
     """Returns a python dict with a user's information"""
-    pass
-    user = db.listings.find_one({"timestamp": listing_timestamp})
+    user = db.users.find_one({"email": user_email})
+    rating = user["aggregate_rating"] / user["number_of_ratings"]
+
+    return {
+            "user_email": user["email"],
+            "user_first_name": user["first_name"],
+            "user_last_name": user["last_name"],
+            "user_image": user["image"],
+            "user_location": user["location"],
+            "user_rating": rating
+    }
+    
     
 
 def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price):
@@ -98,4 +108,5 @@ if __name__ == "__main__":
     init()
     add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",1000,"soul.jpg","personal items")
     add_request(1474746464,"mathcurt@gmail.com")
+    print(get_user_info("jeremy.quicklearner@gmail.com"))
     nuke_db()
