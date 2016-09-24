@@ -9,7 +9,6 @@ def init():
     global db 
     client = pm.MongoClient(MONGOD_IP,MONGOD_PORT)
     db = client[DB_NAME]
-    print(type(db))
     populate_db()
 
 def populate_db():
@@ -38,31 +37,33 @@ def add_listing(seller_email,product_name,description,price,image,listing_type):
                 "buyer": None
             }
     db.listings.insert_one(listing)
+    return t
 
 def add_request(listing_timestamp,buyer_email):
     """Returns the unix timestamp of the listing"""
     #TODO: Add check for identical timestamps
-    pass
     
     listing = db.listings.find_one({"timestamp": listing_timestamp})
     if listing is not None:
-        listing
+        seller_email = listing["seller"]
     else:
-        raise Exeption("Listing not found")
+        raise Exception("Corresponding listing not found")
 
     t = time.time()
     request = {
-                "request_timestamp": 1474746467,
+                "request_timestamp": t,
                 "listing_timestamp": listing_timestamp,
-                "seller_email": "jeremy.quicklearner@gmail.com",
+                "seller_email": t,
                 "buyer_email": buyer_email,
                 "status": 0
             }
-    db.requests.insert_one()
+    db.requests.insert_one(request)
+    return t
 
 def get_user_info(user_email):
     """Returns a python dict with a user's information"""
     pass
+    user = db.listings.find_one({"timestamp": listing_timestamp})
     
 
 def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price):
@@ -96,4 +97,5 @@ def nuke_db():
 if __name__ == "__main__":
     init()
     add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",1000,"soul.jpg","personal items")
+    add_request(1474746464,"mathcurt@gmail.com")
     nuke_db()
