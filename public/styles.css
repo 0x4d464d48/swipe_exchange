@@ -237,6 +237,18 @@ html, body {
   z-index: 99;
 }
 
+/* Header */
+#swipetrade-banner-logo {
+  color: white;
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+#swipetrade-banner-logo > img {
+  height: 100px;
+  padding: 25px;
+}
+
 /* SwipeTrade card styling */
 
 section.section--center.swipetrade-main-section {
