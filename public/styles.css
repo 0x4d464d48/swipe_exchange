@@ -369,3 +369,10 @@ section.section--center.swipetrade-main-section {
   background-color: #689F38;
   font-weight: bold;
 }
+
+/* Button */
+.mdl-demo section > button.swipetrade-button {
+  position: relative;
+  top: 0;
+  right: 0;
+}
