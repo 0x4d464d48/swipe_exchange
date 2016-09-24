@@ -243,13 +243,30 @@ section.section--center.swipetrade-main-section {
   max-width: 1024px;
 }
 
+/* SwipeTrade Filter */
+#swipetrade-filter-input {
+  min-height: 0; /* Reset */
+}
+
+#swipetrade-filter-input > .swipetrade-filter-center {
+  margin: 0 auto;  
+}
+
+#swipetrade-filter-input > .swipetrade-filter-center > .mdl-textfield__label,
+#swipetrade-filter-input > .swipetrade-filter-center > .mdl-textfield__input {
+  /*height: 100%;*/
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* SwipeTrade Card Profile */
 .swipetrade-card {
   background-color: #8BC34A;
   height: 600px;
   color: white;
 }
 
-/* SwipeTrade Card Profile */
 .swipetrade-card > .swipetrade-card__profile {
   position: absolute;
   right: 5%;
