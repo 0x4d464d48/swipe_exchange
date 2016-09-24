@@ -287,7 +287,7 @@ html, body {
  /* Content */
 .swipetrade-card > .swipetrade-card__main-content {
   z-index: 1;
-  height: 35%;
+  height: 33%;
 }
 
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__cost-text,
@@ -324,8 +324,7 @@ html, body {
   background-color: black;
   margin: 0;
   display: flex;
-  z-index: 5;
-  height: 15%;
+  height: 12%;
 }
 
 .swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__mark-for-later,
@@ -345,6 +344,6 @@ html, body {
 }
 
 .swipetrade-card > .swipetrade-card__buttons > .swipetrade-card__buy {
-  background-color: #558B2F;
+  background-color: #689F38;
   font-weight: bold;
 }
