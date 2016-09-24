@@ -80,6 +80,26 @@ def get_user_info(user_email):
 def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price):
     """Returns a python list of dictionarys with 
     keys for all entries in a listing"""
+    return []
+
+    listing_cursor = db.listings.find({})
+
+    listings = []
+    for listings in listing_cursor:
+        listings.append(request)
+
+    listing_cursor.close()
+
+    filtered_listings = filter_listings(listings)
+
+    return process_listings(listings)
+
+#helper for get_listings
+def filter_listings(listings,listing_timestamp,seller_email,listing_type,max_price,min_price):
+    filtered_listings = []
+    pass
+
+def process_listings(listings):
     pass
 
 def get_requests(user_email):
@@ -94,9 +114,11 @@ def get_requests(user_email):
     request_cursor.close()
     
     for request in requests:
+        del request["_id"]
         status = request["status"]
         del request["status"]
         request["request_is_read"] = (status == 2)
+        
 
     return requests
 
