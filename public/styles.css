@@ -237,18 +237,11 @@ html, body {
   z-index: 99;
 }
 
-.swipetrade-card-container {
-  height: 175px;
-  width: 100%;
-}
-
-.swipetrade-card-image {
-  max-width: 100%;
-  height: 250px;
-  text-align: center;
-}
-
 /* SwipeTrade card styling */
+
+section.section--center.swipetrade-main-section {
+  max-width: 1024px;
+}
 
 .swipetrade-card {
   background-color: #8BC34A;
@@ -294,7 +287,7 @@ html, body {
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__distance-text,
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__item-text {
   margin: 0;
-  padding: 5% 15px 0;
+  padding: 5% 0 0 10px;
 }
 
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__cost-text,
@@ -303,18 +296,18 @@ html, body {
 }
 
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__cost-text {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__distance-text {
-  font-size: 15px;
-  font-weight: normal;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 .swipetrade-card > .swipetrade-card__main-content > .swipetrade-card__item-text {
   padding-bottom: 5%;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: lighter;
 }
 
