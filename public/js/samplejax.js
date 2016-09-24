@@ -55,9 +55,37 @@ var userEmails = [
 ];
 
 // Use to test requests
-var requestParams = [
-    ['mathcurt@gmail.com', '1474746465'],
-    ['derekchan1994@gmail.com', '1474746467'],
+var createListingTuples = [
+    ['foo@bar.com',
+        'selling some foo',
+        'The best foo any bar ever had',
+        100000000,
+        'http://i.imgur.com/zuBmJRa.gif',
+        'your_mom'],
+    ['fasdoo@bar.com',
+        'selling some asdffoo',
+        'The best foo anysdfsdf bar ever had',
+        10000000,
+        'http://i.imgur.com/zuBmJRa.gif',
+        'your_mm'],
+    ['foo@ar.com',
+        'sellsdfsdfing some foo',
+        'The best foo any bar ever had',
+        10000,
+        'http://i.imgur.com/zuBmJRa.gif',
+        'yourdddd_mom'],
+    ['f@bar.com',
+        'ssdfdelling some foo',
+        'The bdfsdfsdfest foo any bar ever had',
+        10,
+        'http://i.imgur.com/zuBmJRa.gif',
+        'yoddddddur_mom'],
+    ['o@bar.com',
+        'ssdfdfdfelling some foo',
+        'The bestsdfsdf foo any bar ever had',
+        1,
+        'http://i.imgur.com/zuBmJRa.gif',
+        'your_dad'],
 ];
 
 // Test the ping forever
@@ -80,19 +108,22 @@ for (var email in userEmails) {
     makeRequest(jsonData);
 }
 
-for (var tuple in requestParams) {
-    var currentTuple = requestParams[tuple];
+for (var tuple in createListingTuples) {
+    var currentTuple = createListingTuples[tuple];
     console.log('Gettting request:' + currentTuple);
 
     var jsonData = {
         "jsonrpc": "2.0",
         "id": "id",
-        "method": "create_request",
+        "method": "create_listing",
         "params": {
-            "listing_timestamp": currentTuple[1],
-            "buyer_email": currentTuple[0]
+            "seller_email": currentTuple[0],
+            "listing_name": currentTuple[1],
+            "listing_description": currentTuple[2],
+            "listing_price": currentTuple[3], //$30.00
+            "listing_image": currentTuple[4],
+            "listing_type": currentTuple[5]
         }
-
     }
 
     makeRequest(jsonData);
