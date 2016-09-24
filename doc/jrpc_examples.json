@@ -1,3 +1,17 @@
+//Method to ping backend
+//REQUEST
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"method": "ping"
+}
+//RESPONSE
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"result": 0
+}
+
 //Method to get user
 //Gets a user given their E-mail address
 //REQUEST
