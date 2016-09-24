@@ -370,9 +370,43 @@ section.section--center.swipetrade-main-section {
   font-weight: bold;
 }
 
-/* Button */
-.mdl-demo section > button.swipetrade-button {
+/*****************************************************************************/
+/* Post section */
+/*****************************************************************************/
+section.swipetrade-section-post {
+  padding: 20px 10%;
+  text-align: center;
+  background-color: #689F38;
+}
+
+section.swipetrade-section-post > h1 {
+  font-size: 34px;
+  font-weight: lighter;
+}
+
+section.swipetrade-section-post > button.swipetrade-button {
   position: relative;
   top: 0;
   right: 0;
+  padding: 2% 0;
+  margin: 1% 0;
+  width: 40%;
+  height: auto;
+  background-color: #8BC34A;
+  color: white;
+  font-weight: lighter;
+  font-size: 27px;
+  text-transform: none;
+}
+
+section.swipetrade-section-post > button.swipetrade-button:hover {
+  background-color: #7CB342;
+}
+
+section.swipetrade-section-post > button.swipetrade-button.swipetrade-button-nobackground {
+  background-color: #689F38;
+}
+
+section.swipetrade-section-post > button.swipetrade-button.swipetrade-button-nobackground:hover {
+  background-color: #558B2F;
 }
