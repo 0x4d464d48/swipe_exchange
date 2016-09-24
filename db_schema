@@ -1,0 +1,23 @@
+User
+ * E-mail address
+- First Name
+- Last Name
+- Profile picture (imgur link)
+- Location (String)
+- Aggregate rating
+- Number of ratings
+
+Listing
+* Timestamp (UNIX time)
+- Email of seller
+- Name
+- Description
+- Image (imgur link)
+- Type
+- Buyer (NULL if not bought yet, E-mail of buyer when bought)
+
+Buy Request
+* Timestamp of request
+- Timestamp of listing (identifies listing)
+- Seller E-mail
+- Buyer E-mail
