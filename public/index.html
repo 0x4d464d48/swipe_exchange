@@ -271,6 +271,7 @@
         
         <input type="file" id="swipetrade-upload-img-input"></input>
         <label for="swipetrade-upload-img-input" class="swipetrade-button swipetrade-label-box mdl-button mdl-js-button">Select Image</label>
+        <br>
         
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-upload-img-back">Back</button>
         
@@ -322,8 +323,9 @@
         <h1>Here's how your post looks:</h1>
         
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col"></div>
-          <div class="swipetrade-card mdl-card mdl-cell mdl-cell--8-col mdl-shadow--2dp" style="height:350px">
+          <!-- Hacky empty cols to center grid -->
+          <div class="mdl-cell mdl-cell--4-col"></div>
+          <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
             
             <div class="swipetrade-card__profile">                
                 <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
@@ -350,7 +352,8 @@
             </div>
             
           </div> <!-- swipetrade-card -->
-          <div class="mdl-cell mdl-cell--2-col"></div>
+          <!-- Hacky empty cols to center grid -->
+          <div class="mdl-cell mdl-cell--4-col"></div> 
         </div>
         
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-overview-back">Back</button>
