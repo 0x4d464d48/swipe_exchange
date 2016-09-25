@@ -260,7 +260,6 @@ section.section--center.swipetrade-main-section {
 
 #swipetrade-filter-card > .swipetrade-filter-center > .mdl-textfield__label,
 #swipetrade-filter-card > .swipetrade-filter-center > .mdl-textfield__input {
-  /*height: 100%;*/
   font-size: 20px;
   text-align: center;
 }
