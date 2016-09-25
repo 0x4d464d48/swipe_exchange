@@ -63,3 +63,6 @@ def handle_approve_request(params):
 	)
 
 	return 0
+
+def update_status(username):
+	return data.update_status(username)
