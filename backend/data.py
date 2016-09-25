@@ -62,17 +62,37 @@ def add_request(listing_timestamp,buyer_email):
 
 def get_user_info(user_email):
     """Returns a python dict with a user's information"""
+
+    if (user_email is None):
+        user_cursor = db.users.find()
+        users = []
+        for user in user_cursor:
+            rating = user["aggregate_rating"] / user["number_of_ratings"]
+            user_record = {
+                "user_email": user["email"],
+                "user_first_name": user["first_name"],
+                "user_last_name": user["last_name"],
+                "user_image": user["image"],
+                "user_location": user["location"],
+                "user_rating": rating
+            }
+
+            users.append(user_record)
+
+        return users
+
+
     user = db.users.find_one({"email": user_email})
     rating = user["aggregate_rating"] / user["number_of_ratings"]
 
-    return {
+    return [{
             "user_email": user["email"],
             "user_first_name": user["first_name"],
             "user_last_name": user["last_name"],
             "user_image": user["image"],
             "user_location": user["location"],
             "user_rating": rating
-    }
+    }]
 
 
 def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price):
@@ -226,11 +246,6 @@ if __name__ == "__main__":
     add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",12000,"soul.jpg","sadness")
     add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",13000,"soul.jpg","sadness")
     #add_request(1474746464,"mathcurt@gmail.com")
-    #print(get_user_info("jeremy.quicklearner@gmail.com"))
+    print(get_user_info(None))
     #print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
     #print(get_requests("jeremy.quicklearner@gmail.com"))
-    print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
-    update_status("jeremy.quicklearner@gmail.com")
-    print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
-    update_status("jeremy.quicklearner@gmail.com")
-    print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
