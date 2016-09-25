@@ -99,12 +99,6 @@ html, body {
 .mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
-.mdl-demo #add {
-  position: absolute;
-  right: 40px;
-  top: 36px;
-  z-index: 999;
-}
 
 .mdl-demo .mdl-layout__content section:not(:last-of-type) {
   position: relative;
@@ -373,6 +367,19 @@ section.section--center.swipetrade-main-section {
 /*****************************************************************************/
 /* Post section */
 /*****************************************************************************/
+#add {
+  text-align: center;
+  background-color: #C5E1A5;
+}
+#add:hover {
+  background-color: #AED581;
+}
+#add > i {
+  color: grey;
+  line-height: 350px;
+  font-size: 50px;
+}
+
 section.swipetrade-section-post {
   padding: 20px 10%;
   text-align: center;
