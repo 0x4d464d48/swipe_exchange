@@ -185,13 +185,13 @@ def update_status(user_email):
 
     listing_cursor.close()
 
-    request_cursor = db.requests.find({"listing_timestamp":{ "$in": listing_timestamps},{"status" : 0}})
+    request_cursor = db.requests.find({"listing_timestamp":{ "$in": listing_timestamps},"status" : 0})
 
     requests = []
     request_timestamps = []
     for request in request_cursor:
         requests.append(request)
-        request_timestamps.append(requests["request_timestamp"])
+        request_timestamps.append(request["request_timestamp"])
 
     request_cursor.close()
     
@@ -200,8 +200,8 @@ def update_status(user_email):
         del request["status"]
         
 
-    db.requests.update_many({"listing_timestamp":{ "$in": listing_timestamps},{"status" : 1}},{"$set":{"status": 0}})
-    db.requests.update_many({"request_timestamp":{ "$in": request_timestamps}},{"$set":{"status": 1}})
+    db.requests.update_many({"listing_timestamp":{ "$in": listing_timestamps},"status" : 1},{"$set":{"status": 0}})
+    db.requests.update_many({"request_timestamp":{ "$in": request_timestamps}},{"$set": {"status" : 1}})
      
     return requests
 
@@ -228,6 +228,10 @@ if __name__ == "__main__":
     add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",13000,"soul.jpg","sadness")
     #add_request(1474746464,"mathcurt@gmail.com")
     #print(get_user_info("jeremy.quicklearner@gmail.com"))
+    #print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
+    #print(get_requests("jeremy.quicklearner@gmail.com"))
     print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
-    print(get_requests("jeremy.quicklearner@gmail.com"))
+    update_status("jeremy.quicklearner@gmail.com")
+    print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
+    update_status("jeremy.quicklearner@gmail.com")
     print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
