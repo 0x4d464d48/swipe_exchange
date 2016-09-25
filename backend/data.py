@@ -168,13 +168,12 @@ def approve_request(request_timestamp):
     request = db.requests.find_one({"request_timestamp": request_timestamp})
     buyer_email = request["buyer_email"]
     listing_timestamp = request["listing_timestamp"]
-    request_timestamp = request["request_timestamp"]
 
     #Update Listing
     db.listings.update_one({"listing_timestamp": listing_timestamp},{"$set":{"buyer_email": buyer_email}})
 
     #Delete Reqest
-    db.requests.delete_one({"request_timestamp": request_timestamp})
+    db.requests.delete_many({"listing_timestamp": listing_timestamp})
 
 
     
