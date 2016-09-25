@@ -609,6 +609,8 @@ a.swipetrade-floating-menu {
   height: 75px;
   line-height: 75px;
   padding: 0;
+  
+  color: white; /* text color */
 }
 .swipetrade-floating-menu > i {
   font-size: 30px;
@@ -617,21 +619,25 @@ a.swipetrade-floating-menu {
 #swipetrade-floating-menu-filter {
   right: 200px;
   left: 0;
+  background-color: #CEE18B !important;
 }
 
 #swipetrade-floating-menu-view {
   right: 0;
   left: 200px;
+  background-color: #F280AA !important;  
 }
 
 #swipetrade-floating-menu-profile {
   right: 90%;
   left: 0;
+  background-color: #F79D81 !important;
 }
 
 #swipetrade-floating-menu-help {
   right: 0;
   left: calc(90% - 32px);
+  background-color: #8CAEDC !important;
 }
 
 #swipetrade-floating-menu-new-post {
