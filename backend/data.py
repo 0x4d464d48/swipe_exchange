@@ -73,8 +73,7 @@ def get_user_info(user_email):
             "user_location": user["location"],
             "user_rating": rating
     }
-    
-    
+
 
 def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price):
     """Returns a python list of dictionarys with 
