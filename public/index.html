@@ -86,11 +86,6 @@
         <a href="#post" class="mdl-layout__tab" id="post">Post</a>
         <a href="#profile" class="mdl-layout__tab" id="profile">Profile</a>
         <a href="#swipe" class="mdl-layout__tab" id="swipe">Swipe</a>
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent"
-          id="add">
-            <i class="material-icons" role="presentation">add</i>
-            <span class="visuallyhidden">Add</span>
-          </button>
         </div>
       </header>
   
@@ -145,7 +140,7 @@
               
               <div class="swipetrade-card__buttons mdl-shadow--3dp">
                 <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Mark for Later
+                  Contact
                 </a>
                 <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
                   Buy Now
@@ -173,7 +168,7 @@
               
               <div class="swipetrade-card__buttons mdl-shadow--3dp">
                 <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Mark for Later
+                  Contact
                 </a>
                 <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
                   Buy Now
@@ -201,7 +196,7 @@
               
               <div class="swipetrade-card__buttons mdl-shadow--3dp">
                 <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Mark for Later
+                  Contact
                 </a>
                 <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
                   Buy Now
@@ -220,6 +215,10 @@
         <div class="mdl-layout__tab-panel" id="post">
           <section class="swipetrade-main-section section--center mdl-grid mdl-shadow--2dp">
             
+            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp mdl-button" style="height:350px" id="add">
+              <i class="material-icons">add</i>
+            </div>
+            
             <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
               
               <div class="swipetrade-card__profile">                
@@ -239,7 +238,7 @@
               
               <div class="swipetrade-card__buttons mdl-shadow--3dp">
                 <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Mark for Later
+                  Contact
                 </a>
                 <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
                   Buy Now
@@ -254,7 +253,7 @@
       <div class="mdl-layout__tab-panel" id="post-new">
         <section class="swipetrade-section-post">
           
-          <h1>Step 1: What are you sending?</h1>
+          <h1>Step 1: what are you selling?</h1>
           
           <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Misc Personal Items</button><br>
           <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Textbook</button><br>
@@ -267,10 +266,10 @@
     <div class="mdl-layout__tab-panel" id="post-new-upload-img">
       <section class="swipetrade-section-post">
         
-        <h1>Step 2: Upload an image</h1>
+        <h1>Step 2: upload an image for what you are selling</h1>
         
         <input type="file" id="swipetrade-upload-img-input"></input>
-        <label for="swipetrade-upload-img-input" class="swipetrade-button swipetrade-label-box mdl-button mdl-js-button">Select Image</label>
+        <label for="swipetrade-upload-img-input" class="swipetrade-button swipetrade-label-box mdl-button mdl-js-button">Click to upload an image</label>
         <br>
         
         <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-upload-img-back">Back</button>
@@ -283,7 +282,7 @@
     <div class="mdl-layout__tab-panel" id="post-new-set-price">
       <section class="swipetrade-section-post">
         
-        <h1>Step 3: Select a price for what you are selling</h1>
+        <h1>Step 3: select a price for what you are selling</h1>
         
         <div class="swipetrade-price-input mdl-textfield mdl-js-textfield">
           <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="swipetrade-price-input">
@@ -344,7 +343,7 @@
             
             <div class="swipetrade-card__buttons mdl-shadow--3dp">
               <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                Mark for Later
+                Contact
               </a>
               <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
                 Buy Now
@@ -498,8 +497,8 @@
       </footer>
     </main>
   </div>
-  <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source"
-    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+  <!-- <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source"
+    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a> -->
   <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
 
