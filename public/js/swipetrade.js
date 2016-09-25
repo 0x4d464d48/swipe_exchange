@@ -25,7 +25,7 @@ $(document).ready(function(){
     console.log("Input contents: %s", $(this).val());
   });
   
-  var tabs = {
+  var post_new_tabs = {
     1: "#post-new",
     2: "#post-new-upload-img",
     3: "#post-new-set-price",
@@ -35,12 +35,12 @@ $(document).ready(function(){
   
   $("#add").click(function() {
     console.log("Clicked!");
-    activateTab(tabs[1]);
+    activateTab(post_new_tabs[1]);
   });
     
   $(".swipetrade-button-post-new").click(function() {
     console.log("Woohoo" + $(this).text());
-    activateTab(tabs[2]);
+    activateTab(post_new_tabs[2]);
   });
 
   $("#swipetrade-upload-img-input").click(function() {
@@ -49,29 +49,29 @@ $(document).ready(function(){
   });
   $("#swipetrade-button-upload-img").click(function() {
     console.log("Woohoo2");
-    activateTab(tabs[3]);
+    activateTab(post_new_tabs[3]);
   });
   $("#swipetrade-button-upload-img-back").click(function() {
     console.log("Woohoo2");
-    activateTab(tabs[1]);
+    activateTab(post_new_tabs[1]);
   });
   
   $("#swipetrade-button-set-price").click(function() {
     console.log("Woohoo3");
-    activateTab(tabs[4]);
+    activateTab(post_new_tabs[4]);
   });
   $("#swipetrade-button-set-price-back").click(function() {
     console.log("Woohoo3");
-    activateTab(tabs[2]);
+    activateTab(post_new_tabs[2]);
   });
   
   $("#swipetrade-button-set-description").click(function() {
     console.log("Woohoo3");
-    activateTab(tabs[5]);
+    activateTab(post_new_tabs[5]);
   });
   $("#swipetrade-button-set-description-back").click(function() {
     console.log("Woohoo3");
-    activateTab(tabs[3]);
+    activateTab(post_new_tabs[3]);
   });
   
   $("#swipetrade-button-overview").click(function() {
@@ -80,7 +80,16 @@ $(document).ready(function(){
   });
   $("#swipetrade-button-overview-back").click(function() {
     console.log("Woohoo3");
-    activateTab(tabs[4]);
+    activateTab(post_new_tabs[4]);
   });
+  
+  /* Floating Menu */
+  $(".swipetrade-floating-menu").click(function(e) {
+    // This prevents the <a> from actually opening a new page
+    e.preventDefault();
+    var href = $(this).attr("href");
+    console.log("Derek: Floating menu item #" + $(this).attr('id') + " clicked! Linking to href " + href);
+    activateTab(href);
+  })
     
 });

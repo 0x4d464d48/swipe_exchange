@@ -480,3 +480,51 @@ textarea.swipetrade-textarea-input {
   background-color: #8BC34A;
   border-width: 0;
 }
+
+/* Floating Menu */
+.swipetrade-floating-menu {
+  position: fixed;
+  display: block;
+  z-index: 900;
+  right: 0;
+  bottom: 5%;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 75px;
+  border-radius: 50%;
+  height: 75px;
+  line-height: 75px;
+  padding: 0;
+}
+.swipetrade-floating-menu > i {
+  font-size: 30px;
+}
+
+#swipetrade-floating-menu-new-post {
+  right: 0;
+  bottom: 5%;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  line-height: 100px;
+  padding: 0;
+}
+#swipetrade-floating-menu-new-post > i {
+  font-size: 50px;
+}
+
+#swipetrade-floating-menu-filter {
+  right: 200px;
+  bottom: calc(5% + 10px);
+  left: 0;
+}
+
+#swipetrade-floating-menu-view {
+  right: 0;
+  bottom: calc(5% + 10px);
+  left: 200px;
+}
