@@ -91,6 +91,7 @@ $(document).ready(function(){
     console.log("Derek: Floating menu item #" + $(this).attr('id') + " clicked! Linking to href " + href);
     activateTab(href);
     $('.swipe').hide();
+    $('#sellerprofile').hide();
   });
   
   $("#swipetrade-floating-menu-view").click(function(e) {
