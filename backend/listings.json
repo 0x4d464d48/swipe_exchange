@@ -6,7 +6,7 @@
         "description": "I'm selling my Coat. It's cool.",
         "price": 12000, 
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN5HNGH-afbcf15139/le_chateau_overcoat_720.jpg",
-        "type": "Coat",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -16,7 +16,7 @@
         "description": "I'm selling my Raincoat. It's super thin",
         "price": 15000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN0U1J9-377dae0a9a/super-thin_mec_raincoat_720.jpg",
-        "type": "Coat",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -26,7 +26,7 @@
         "description": "I have an extra soylent bottle.",
         "price": 500,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN3N6FR-157c5be221/soylent_720.jpg",
-        "type": "Food",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -36,7 +36,7 @@
         "description": "This is an awsome Rubik's Cube it has colored faces, no stickers!",
         "price": 2000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN4KAF3-a1454de1cd/rubik_s_speedcube_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -46,7 +46,7 @@
         "description": "This computer has lasted me a decade it's awsome!",
         "price": 10000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMZQ8DT-79ff379b3e/ibm_thinkpad_from_2006_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
 
     },
@@ -57,7 +57,7 @@
         "description": "A great Umbrella",
         "price": 10000,
         "image": "https://files.slack.com/files-pri/T2FEL5FD2-F2FMTT83Y/freeflex_stick_umbrella.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
 
     },
@@ -68,7 +68,7 @@
         "description": "A bunch of water bottles, great for hackathons!",
         "price": 5000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN1400M-a16d3eae53/24-pack_of_nestle_bottled_water_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -78,7 +78,7 @@
         "description": "An awsome swivel chair",
         "price": 30000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN6FH7B-0160c4806a/swivel_chair_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
 
     },
@@ -89,7 +89,7 @@
         "description": "Teleconferencing hardware, perfect for any long-distance meeting",
         "price": 100000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMVP464-2e8f695a66/cisco_teleconferencing_system_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -99,7 +99,7 @@
         "description": "My old MacBook is obsolete and I'm selling it",
         "price": 30000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN6M22D-fba314f1f6/macbook_air_2013_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -109,7 +109,7 @@
         "description": "I have lasagna and don't like it. Someone buy my Lasagna!",
         "price": 100,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMVSPFG-c83fe957b8/vegetarian_lasaga_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -119,7 +119,7 @@
         "description": "My super rich parents got me a better microwave. This is my old one.",
         "price": 5000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FND85TL-4d79569a06/danby_desgner_microwave_over_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -129,7 +129,7 @@
         "description": "I stole this from a hotel kitchen. Now I'm selling it!",
         "price": 5000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMW2L3G-bfed7de8dd/four-piece_toaster_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -139,7 +139,7 @@
         "description": "I hate headphone jacks and got the iPhone 7, now I'm selling my old phone",
         "price": 30000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMW9BNC-44d131022c/iphone_6__256gb_in_white_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -149,7 +149,7 @@
         "description": "If you need a lot of coffee, this is the coffe maker for you!",
         "price": 25000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FLEM7L3-726db2f584/enterprise_coffee_maker_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -159,7 +159,7 @@
         "description": "I reached enlightenment by looking at this art piece, maybe you can too!",
         "price": 900100,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FLEQJ9H-b2a2ce95c4/artisan_pottery_piece_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -169,7 +169,7 @@
         "description": "An excellent, reliable wristwatch from a local company",
         "price": 15000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMW9NVA-2c710a46e9/st._moritz_momentum_m1_wristwatch_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -179,7 +179,7 @@
         "description": "Need to store pills while playing D&D? Buy this!",
         "price": 300,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMWCULU-ae409ca444/bclc_six-sided_die_pillbox_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -189,7 +189,7 @@
         "description": "It's a computer mouse, not a rodent",
         "price": 2500,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN003L6-b93b14c1b6/red_wireless_computer_mouse_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -199,7 +199,7 @@
         "description": "Need to write things down? Love gambling? Buy this!",
         "price": 500,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FNB65KK-01f142c48a/bclc_retractable_ballpoint_pen_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -209,7 +209,7 @@
         "description": "This microphone is perfect for live performances",
         "price": 20000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMWRME0-3e59ac5ba2/shure_microphone_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -219,7 +219,7 @@
         "description": "This is a power strip for power providing purposes",
         "price": 1500,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN6B59B-3a44b751e3/six-outlet_power_strip_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -229,7 +229,7 @@
         "description": "You better buy this mixer if you love mixing like me",
         "price": 300000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN6ELGM-f600a06b6a/professional-grade_audio_mixer_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -239,7 +239,7 @@
         "description": "Project images on walls in a pinch with this sweet sweet digital projector",
         "price": 300000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN6FU7P-f14f04e692/epson_digital_projector_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -249,7 +249,7 @@
         "description": "This is a thing and you can sit on it",
         "price": 7000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN0P796-0183476a1b/modern_wire-mesh_chair_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -259,7 +259,7 @@
         "description": "Perfect for throwing on someone's house",
         "price": 500,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FNB05UP-58e0e10811/two_rolls_of_toilet_paper_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
         "buyer": null
     },
     {
@@ -269,7 +269,47 @@
         "description": "I went to PAX but now I need money! Buy my lanyard!",
         "price": 20000,
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FNB8KEK-fb32b9ca10/pax_lanyard_with_collectible_pins_720.jpg",
-        "type": "misc",
+        "type": "Misc personal items",
+        "buyer": null
+    },
+    {
+        "timestamp": 1474834122325,
+        "seller": "r.leblanc@mail.com",
+        "name": "Apartment for Rent on Kingsway",
+        "description": "Very Spacious one-bedroom suite with a lovely view",
+        "price": 500000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FNKP21M-be2744ce7a/apartment-rent-mickiewicza-street-bialystok-95f21b7574068a1b0a5704e61f89f477_720.jpg",
+        "type": "Housing rental",
+        "buyer": null
+    },
+    {
+        "timestamp": 1474834291561,
+        "seller": "jessica.vo@mail.com",
+        "name": "Apartment for Rent on Broadway",
+        "description": "Pretty small badly-maintained apartment with no Wi-Fi",
+        "price": 200000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FNKP5B9-ba535d13fb/aachen-studio-apartment-for-rent_720.jpg",
+        "type": "Housing rental",
+        "buyer": null
+    },
+    {
+        "timestamp": 1474834465798,
+        "seller": "jeremy.quicklearner@gmail.com",
+        "name": "University Teaching - An Introductory Guide",
+        "description": "Required for UVTC 101 at UBC",
+        "price": 10000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FNA4A2J-57845d2f74/university_teaching_book_cover_design_ayelet_lazarovitch_720.jpg",
+        "type": "Textbook",
+        "buyer": null
+    },
+    {
+        "timestamp": 1474834621422,
+        "seller": "rrwallace@ymail.com",
+        "name": "Disaporas Reimagined",
+        "description": "Required for RLGN 312 at UBC",
+        "price": 15000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FNA4F1U-369ffc67d0/odp_book_cover_720.jpg",
+        "type": "Textbook",
         "buyer": null
     }
 ]
