@@ -12,13 +12,13 @@
 	"result": 0
 }
 
-//Method to get user
+//Method to get users
 //Gets a user given their E-mail address
 //REQUEST
 {
 	"jsonrpc": "2.0",
 	"id": "id",
-	"method": "get_user",
+	"method": "get_users",
 	"params": {
 		"user_email": "jeremy.quicklearner@gmail.com"
 	}
@@ -27,14 +27,14 @@
 {
 	"jsonrpc": "2.0",
 	"id": "id",
-	"result": {
+	"result": [{
 		"user_email": "jeremy.quicklearner@gmail.com",
 		"user_first_name": "Jeremy",
 		"user_last_name": "Lerner",
 		"user_image": "http://www.ingur.com/badonk",
 		"user_location": "Vancouver",
 		"user_rating": 5		
-	}
+	}]
 }
 
 //Method to get listings
