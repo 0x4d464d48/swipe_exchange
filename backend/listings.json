@@ -311,5 +311,15 @@
         "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FNA4F1U-369ffc67d0/odp_book_cover_720.jpg",
         "type": "Textbook",
         "buyer": null
+    },
+    {
+        "timestamp": 1474835296419,
+        "seller": "mathcurt@gmail.com",
+        "name": "Liberal Arts and Critical Issues",
+        "description": "Required for ARTS 200 at UBC",
+        "price": 130000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN8HHQC-21fc48fa66/laci-book_480.jpg",
+        "type": "Textbook",
+        "buyer": null
     }
 ]
