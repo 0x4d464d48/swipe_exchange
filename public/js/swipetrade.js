@@ -93,6 +93,8 @@ $(document).ready(function(){
     activateTab(href);
     $('.swipe').hide();
     $('#sellerprofile').hide();
+    
+    console.log("Derek Hack " + $("#swipetrade-view-icon").html());
   });
   
   $("#swipetrade-floating-menu-view").click(function(e) {
@@ -103,10 +105,12 @@ $(document).ready(function(){
     if (current_active === "browse") {
       // console.log("Derek: Changing href to swipe");
       $("#swipetrade-floating-menu-view").attr("href", "#swipe");
+      $("#swipetrade-view-icon").html("view_carousel");
       
     } else {
       // console.log("Derek: Changing href to browse");
       $("#swipetrade-floating-menu-view").attr("href", "#browse");
+      $("#swipetrade-view-icon").html("view_module");
       
       $('.swipe').show();
       $('.swipe').slick({
