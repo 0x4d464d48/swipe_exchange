@@ -689,7 +689,8 @@ a.swipetrade-floating-menu {
 }
 
 /* Overlay */
-#swipetrade-overlay {
+#swipetrade-overlay,
+.swipetrade-overlay-submenu {
   display: none;
   position: fixed;
   height: 100vh;
@@ -702,7 +703,9 @@ a.swipetrade-floating-menu {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-#swipetrade-overlay > #swipetrade-floating-menu-overlay-exit {
+#swipetrade-overlay > #swipetrade-floating-menu-overlay-exit,
+ #swipetrade-overlay-location > #swipetrade-floating-menu-overlay-location-exit,
+ .swipetrade-overlay-submenu > a.swipetrade-floating-menu-overlay-fakexit{
   bottom: 0;
   top: 0;
   background-color: transparent !important;
@@ -722,8 +725,31 @@ a.swipetrade-floating-menu {
   border: none;
   color: white;
 }
-
 #swipetrade-overlay > .swipetrade-filter-input-long {
-  width: 70%;
+  width: 82%;
 }
 
+.swipetrade-overlay-submenu {
+  z-index: 802;
+  background: rgba(0, 0, 0, 0.8);
+}
+.swipetrade-overlay-submenu > h2 {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 45px;
+}
+.swipetrade-overlay-submenu > h3 {
+  font-size: 45px;
+  font-weight: lighter;
+}
+@media (max-width: 700px) {
+  .swipetrade-overlay-submenu > h2 {
+    padding-top: 40%;
+    padding-bottom: 5%;
+    font-size: 20px;
+  }
+  .swipetrade-overlay-submenu > h3 {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+}

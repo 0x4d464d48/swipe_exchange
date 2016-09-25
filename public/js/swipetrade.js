@@ -153,5 +153,36 @@ $(document).ready(function(){
     e.preventDefault();
     $("#swipetrade-overlay").fadeOut();
   });
+  
+  $("#swipetrade-filter-input-location").click(function(e) {
+    // This prevents the <a> from actually opening a new page
+    e.preventDefault();
+    console.log("Derek: filter");
+    $("#swipetrade-overlay-location").fadeIn();
+  });
+  
+  $("#swipetrade-filter-input-location").click(function(e) {
+    // This prevents the <a> from actually opening a new page
+    e.preventDefault();
+    console.log("Derek: filter");
+    $("#swipetrade-overlay-location").fadeIn();
+  });
+  
+  $("#swipetrade-filter-input-category").click(function(e) {
+    // This prevents the <a> from actually opening a new page
+    e.preventDefault();
+    console.log("Derek: filter");
+    $("#swipetrade-overlay-category").fadeIn();
+  });
+  
+  $(".swipetrade-floating-menu-overlay-fakexit").click(function(e) {
+    e.preventDefault();
+  });
+
+  $(".swipetrade-overlay-submenu").click(function(e) {
+    e.preventDefault();
+    $(this).fadeOut();
+  });
+  
     
 });
