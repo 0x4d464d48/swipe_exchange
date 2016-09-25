@@ -149,11 +149,11 @@ def get_requests(user_email):
     
     for request in requests:
         del request["_id"]
-        status = request["status"]
         del request["status"]
-        request["request_is_read"] = (status == 2)
         
 
+    db.requests.update_many({"seller_email": user_email},{"$set":{"status": "2"}})
+     
     return requests
 
     
@@ -178,5 +178,6 @@ if __name__ == "__main__":
     add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",13000,"soul.jpg","sadness")
     #add_request(1474746464,"mathcurt@gmail.com")
     #print(get_user_info("jeremy.quicklearner@gmail.com"))
-    #print(get_requests("jeremy.quicklearner@gmail.com"))
-    print(get_listings(None,"mathcurt@gmail.com","sadness",5000,None))
+    #print(db.requests.find_one({"seller_email": "jeremy.quicklearner@gmail.com"}))
+    #get_requests("jeremy.quicklearner@gmail.com")
+    #print(db.requests.find_one({"seller_email": "jeremy.quicklearner@gmail.com"}))
