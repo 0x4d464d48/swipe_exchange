@@ -429,7 +429,7 @@ section.swipetrade-section-post > input#swipetrade-upload-img-input {
 }
 
 section.swipetrade-section-post > label.swipetrade-button.swipetrade-label-box {
-  width: 60vh;
+  width: 60vw;
   height: 55vh;
   line-height: 55vh;
   background-color: #8BC34A;
