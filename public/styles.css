@@ -389,6 +389,7 @@ section.swipetrade-section-post {
 section.swipetrade-section-post > h1 {
   font-size: 34px;
   font-weight: lighter;
+  color: white;
 }
 
 section.swipetrade-section-post > label,
