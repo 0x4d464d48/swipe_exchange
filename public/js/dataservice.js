@@ -1,15 +1,15 @@
-var masterData = [];
+var masterItemData = [];
 var userDirectory = [];
 
 /* Load the main page after data is received */
 function loadMainPage(data) {
-    masterData = data;
-    console.log('THE MASTER ARRAY:');
-    console.log(masterData);
+    masterItemData = data;
+    console.log('THE MASTER ITEM ARRAY:');
+    console.log(masterItemData);
     // Load the data into the web page
     $('document').ready(function() {
-        for(var listing in masterData) {
-             var currentListing = masterData[listing];
+        for(var listing in masterItemData) {
+             var currentListing = masterItemData[listing];
 
       var listingElement =  '<div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">' +
             '<div class="swipetrade-card__profile">' +
