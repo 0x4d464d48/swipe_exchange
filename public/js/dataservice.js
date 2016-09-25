@@ -1,4 +1,5 @@
 var masterData = [];
+var userDirectory = [];
 
 /* Load the main page after data is received */
 function loadMainPage(data) {
@@ -39,4 +40,12 @@ function loadMainPage(data) {
     });
 }
 
+function populateUserDirectory(data) {
+    userDirectory = data;
+
+    console.log('USER DIRECTORY:');
+    console.log(userDirectory);
+}
+
 getAllListings(loadMainPage);
+getAllUsers(populateUserDirectory);

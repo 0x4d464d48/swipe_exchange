@@ -99,7 +99,7 @@ for (var email in userEmails) {
     var jsonData = {
         "jsonrpc": "2.0",
         "id": "id",
-        "method": "get_user",
+        "method": "get_users",
         "params": {
             "user_email": currentEmail
         }

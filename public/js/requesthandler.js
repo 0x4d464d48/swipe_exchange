@@ -34,3 +34,18 @@ function getAllListings(callback) {
 
     makeRequest(requestPayload, callback);
 }
+
+
+function getAllUsers(callback) {
+    var requestPayload = {
+        "jsonrpc": "2.0",
+        "id": "id",
+        "method": "get_users",
+        "params": {
+            "user_email": null
+        }
+    }
+
+    makeRequest(requestPayload, callback);
+
+}
