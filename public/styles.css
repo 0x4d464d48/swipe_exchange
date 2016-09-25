@@ -644,9 +644,11 @@ a.swipetrade-floating-menu {
   width: 100px;
   height: 100px;
   line-height: 100px;
+  background-color: white !important;
 }
 #swipetrade-floating-menu-new-post > i {
   font-size: 50px;
+  color: #ABC249;
 }
 
 /* Mobile */
@@ -662,7 +664,7 @@ a.swipetrade-floating-menu {
     font-size: 20px;
   }
   #swipetrade-floating-menu-new-post {
-    bottom: 1%;
+    bottom: calc(1% - 5px);
     width: 75px;
     height: 75px;
     line-height: 75px;
