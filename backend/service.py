@@ -7,7 +7,8 @@ handlers = {
 	"get_listings":		logic.handle_get_listings,
 	"get_requests":		logic.handle_get_request,
 	"create_listing":	logic.handle_create_listing,
-	"create_request":	logic.handle_create_request
+	"create_request":	logic.handle_create_request,
+	"approve_request":	logic.handle_approve_request
 }
 
 def init():

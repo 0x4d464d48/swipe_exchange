@@ -55,3 +55,11 @@ def handle_create_request(params):
 		listing_timestamp,
 		buyer_email
 	)
+
+def handle_approve_request(params):
+	request_timestamp = params["request_timestamp"]
+	data.approve_request(
+		request_timestamp
+	)
+
+	return 0
