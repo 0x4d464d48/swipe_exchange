@@ -175,7 +175,7 @@
 //Notification for testing
 {
 	"jsonrpc": "2.0",
-	"method": "hey_ping"
+	"method": "hey_ping",
 	"params": {
 		"user_email": "test"
 	}
@@ -186,6 +186,7 @@
 	"jsonrpc": "2.0",
 	"method": "hey_request",
 	"params": {
+		"request_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
 		"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
 		"buyer_email": "mathcurt@gmail.com"
 	}
