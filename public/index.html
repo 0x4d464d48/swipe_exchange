@@ -90,17 +90,11 @@
     <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
       <div class="mdl-layout--large-screen-only mdl-layout__header-row">
       </div>
-      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      <div class="mdl-layout__header-row" id="swipetrade-banner-row">
         <h3 id="swipetrade-banner-logo"><img src="images/logo.png">Swipetrade</h3>
       </div>
       <div class="mdl-layout--large-screen-only mdl-layout__header-row">
       </div>
-      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-        <a href="#browse" class="mdl-layout__tab is-active" id="browse">Browse</a>
-        <a href="#post" class="mdl-layout__tab" id="post">Post</a>
-        <a href="#profile" class="mdl-layout__tab" id="profile">Profile</a>
-        <a href="#swipe" class="mdl-layout__tab" id="swipe">Swipe</a>
-        </div>
       </header>
   
       <main class="mdl-layout__content">
@@ -236,10 +230,6 @@
       <div class="mdl-layout__tab-panel" id="post">
         <section class="swipetrade-main-section section--center mdl-grid mdl-shadow--2dp">
 
-          <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp mdl-button" style="height:350px" id="add">
-            <i class="material-icons">add</i>
-          </div>
-
           <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
 
             <div class="swipetrade-card__profile">
@@ -291,7 +281,7 @@
           <h1>Step 2: upload an image for what you are selling</h1>
 
           <input type="file" id="swipetrade-upload-img-input"></input>
-          <label for="swipetrade-upload-img-input" class="swipetrade-button swipetrade-label-box mdl-button mdl-js-button">Click to upload an image</label>
+          <label for="swipetrade-upload-img-input" class="swipetrade-button swipetrade-label-box mdl-button mdl-js-button">Upload an image</label>
           <br>
 
           <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-upload-img-back">Back</button>
@@ -445,7 +435,7 @@
       <!-- Profile -->
 
       <div class="mdl-layout__tab-panel" id="profile">
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" >
+        <section class="section--center mdl-grid mdl-shadow--2dp" >
           <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px; margin: auto; width:100%">
             <div class="swipetrade-card__profile-seller">
               <img src="images/chick.jpg" class="swipetrade-card__profile-picture-seller">
