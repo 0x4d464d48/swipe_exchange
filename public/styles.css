@@ -297,7 +297,7 @@ section.section--center.swipetrade-main-section {
 
 .swipetrade-card > .swipetrade-card__profile > img.swipetrade-card__profile-picture {
   height: 100%;
-  border-radius: 50%;
+  border-radius: 100%;
   cursor: pointer;
 }
 
@@ -306,7 +306,7 @@ section.section--center.swipetrade-main-section {
 .swipetrade-card > .swipetrade-card__profile-seller {
   margin: auto;
   height: 50%;
-  border-radius: 20%;
+  border-radius: 50%;
   background-color: #8BC34A;
   padding: 30px;
 }

@@ -63,7 +63,7 @@ function loadMainPage(data) {
             '</a>' +
         '</div>';
 
-             $('#demo-profile').append(profileItem);          
+            $('#demo-profile').append(profileItem);          
           }
           dennisProfileItems.push(profileItem);
 
@@ -105,10 +105,14 @@ function populateUserDirectory(data) {
       userImageMap[currentUser.user_email] = currentUser.user_image;
 
       // Make Dennis' user profilel
-      if(currentUser.user_email == 'dennis_liulinyin@hotmail.com') { 
+      if(currentUser.user_email == 'dennis_liulinyin@hotmail.com') {
+        console.log('Found dennis!'); 
+      }
+    }
+
           var profileHead = '<div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px; margin: auto; width:100%">' +
             '<div class="swipetrade-card__profile-seller">' +
-              '<img src="' + userImageMap[currentUser.user_email] + 'class="swipetrade-card__profile-picture-seller" onclick="showSellerProfile()">' +
+              '<img src="http://i.imgur.com/uJ68eo2.jpg" class="swipetrade-card__profile-picture-seller" onclick="showSellerProfile()">' +
             '</div>' +
               '<p class="swipetrade-card__profile-name">Dennis Liu</p>' +
               '<p class="swipetrade-card__edit-profile">EDIT YOUR INFO</p>' +
@@ -122,8 +126,6 @@ function populateUserDirectory(data) {
             '</div>' +
           '</div>';
              $('#demo-profile').append(profileHead);
-      }
-    }
 
     console.log('USER DIRECTORY:');
     console.log(userDirectory);
