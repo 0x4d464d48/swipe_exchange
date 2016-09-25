@@ -2,21 +2,18 @@
     {
         "request_timestamp": 1474746465,
         "listing_timestamp": 1474746464,
-        "seller_email": "jeremy.quicklearner@gmail.com",
         "buyer_email": "mathcurt@gmail.com",
         "status": 0
     },
     {
         "request_timestamp": 1474746467,
-        "listing_timestamp": 1474746466,
-        "seller_email": "jeremy.quicklearner@gmail.com",
+        "listing_timestamp": 1474746464,
         "buyer_email": "derekchan1994@gmail.com",
         "status": 1
     },
     {
         "request_timestamp": 1474746469,
-        "listing_timestamp": 1474746468,
-        "seller_email": "jeremy.quicklearner@gmail.com",
+        "listing_timestamp": 1474746464,
         "buyer_email": "derekchan1994@gmail.com",
         "status": 2
     }
