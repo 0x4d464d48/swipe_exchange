@@ -687,3 +687,25 @@ a.swipetrade-floating-menu {
 .swipetrade-profile-other {
   background-color: black;
 }
+
+/* Overlay */
+#swipetrade-overlay {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(105, 159, 66, 0.75);
+  z-index: 800;
+  
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+#swipetrade-overlay > #swipetrade-floating-menu-overlay-exit {
+  bottom: 0;
+  top: 0;
+  background-color: transparent !important;
+  right: 0;
+  left: 80%;
+}

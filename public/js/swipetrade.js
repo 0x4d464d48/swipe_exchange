@@ -84,7 +84,7 @@ $(document).ready(function(){
   });
   
   /* Floating Menu */
-  $(".swipetrade-floating-menu").click(function(e) {
+  $(".swipetrade-floating-menu-href").click(function(e) {
     // This prevents the <a> from actually opening a new page
     e.preventDefault();
     var href = $(this).attr("href");
@@ -134,6 +134,23 @@ $(document).ready(function(){
       });
       
     }
+  });
+    
+  
+  $("#swipetrade-floating-menu-filter").click(function(e) {
+    // This prevents the <a> from actually opening a new page
+    e.preventDefault();
+    console.log("Derek: filter");
+    var overlayStatus = $("#swipetrade-overlay").css("display");
+    if (overlayStatus === "none") {
+      $("#swipetrade-overlay").fadeIn();
+    } else {
+      $("#swipetrade-overlay").fadeOut();
+    }
+  });
+  $("#swipetrade-floating-menu-overlay-exit").click(function(e) {
+    e.preventDefault();
+    $("#swipetrade-overlay").fadeOut();
   });
     
 });
