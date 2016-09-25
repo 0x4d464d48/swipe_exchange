@@ -54,7 +54,6 @@ def add_request(listing_timestamp,buyer_email):
     request = {
                 "request_timestamp": t,
                 "listing_timestamp": listing_timestamp,
-                "seller_email": t,
                 "buyer_email": buyer_email,
                 "status": 0
             }
@@ -139,7 +138,16 @@ def process_listings(listings):
 def get_requests(user_email):
     """Returns a python list of dictionarys with 
     keys for all entries in a listing"""
-    request_cursor = db.requests.find({"seller_email": user_email})
+    
+    listing_cursor = db.listings.find({"seller": user_email})
+
+    listing_timestamps = []
+    for listing in listing_cursor:
+        listing_timestamps.append(listing["timestamp"])
+
+    listing_cursor.close()
+
+    request_cursor = db.requests.find({"listing_timestamp":{ "$in": listing_timestamps}})
 
     requests = []
     for request in request_cursor:
@@ -152,9 +160,22 @@ def get_requests(user_email):
         del request["status"]
         
 
-    db.requests.update_many({"seller_email": user_email},{"$set":{"status": "2"}})
+    db.requests.update_many({"listing_timestamp":{ "$in": listing_timestamps}},{"$set":{"status": "2"}})
      
     return requests
+
+def approve_request(request_timestamp):
+    request = db.requests.find_one({"request_timestamp": request_timestamp})
+    buyer_email = request["buyer_email"]
+    listing_timestamp = request["listing_timestamp"]
+    request_timestamp = request["request_timestamp"]
+
+    #Update Listing
+    db.listings.update_one({"listing_timestamp": listing_timestamp},{"$set":{"buyer_email": buyer_email}})
+
+    #Delete Reqest
+    db.requests.delete_one({"request_timestamp": request_timestamp})
+
 
     
 def nuke_db():
@@ -178,6 +199,6 @@ if __name__ == "__main__":
     add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",13000,"soul.jpg","sadness")
     #add_request(1474746464,"mathcurt@gmail.com")
     #print(get_user_info("jeremy.quicklearner@gmail.com"))
-    #print(db.requests.find_one({"seller_email": "jeremy.quicklearner@gmail.com"}))
-    #get_requests("jeremy.quicklearner@gmail.com")
-    #print(db.requests.find_one({"seller_email": "jeremy.quicklearner@gmail.com"}))
+    print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
+    print(get_requests("jeremy.quicklearner@gmail.com"))
+    print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
