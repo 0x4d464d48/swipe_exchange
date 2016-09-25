@@ -247,5 +247,6 @@ if __name__ == "__main__":
     add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",13000,"soul.jpg","sadness")
     #add_request(1474746464,"mathcurt@gmail.com")
     print(get_user_info(None))
+    print(get_listings(None,None,None,None,None))
     #print(db.requests.find_one({"buyer_email": "derekchan1994@gmail.com"}))
     #print(get_requests("jeremy.quicklearner@gmail.com"))

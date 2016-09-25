@@ -1,32 +1,64 @@
 [
     {
-        "timestamp": 1474746464,
+        "timestamp": 1474827154165,
         "seller": "jeremy.quicklearner@gmail.com",
-        "name": "Shoes for sale",
-        "description": "I'm selling my shoes. they're cool.",
-        "price": 1250, 
-        "image": "http://www.imgur.com/bazoop",
-        "type": "Footwear",
+        "name": "Le Chateau Overcoat",
+        "description": "I'm selling my Coat. It's cool.",
+        "price": 12000, 
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN5HNGH-afbcf15139/le_chateau_overcoat_720.jpg",
+        "type": "Coat",
         "buyer": null
     },
     {
-        "timestamp": 1474746466,
-        "seller": "jeremy.quicklearner@gmail.com",
-        "name": "Textbook for sale",
-        "description": "I'm selling my textbook. It's Big Java by Horstmann",
+        "timestamp": 1474827166559,
+        "seller": "derekchan1994@gmail.com",
+        "name": "Super thin raincoat",
+        "description": "I'm selling my Raincoat. It's super thin",
         "price": 15000,
-        "image": "http://www.imgur.com/bazoop",
-        "type": "Literature",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN0U1J9-377dae0a9a/super-thin_mec_raincoat_720.jpg",
+        "type": "Coat",
         "buyer": null
     },
     {
-        "timestamp": 1474746468,
-        "seller": "jeremy.quicklearner@gmail.com",
-        "name": "Textbook for sale",
-        "description": "I'm selling my skateboard.",
-        "price": 25000,
-        "image": "http://www.imgur.com/bazoop",
-        "type": "Skateboards",
+        "timestamp": 1474827177001,
+        "seller": "mathcurt@gmail.com",
+        "name": "1 Soylent bottle",
+        "description": "I have an extra soylent bottle.",
+        "price": 500,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN3N6FR-157c5be221/soylent_720.jpg",
+        "type": "Food",
         "buyer": null
+    },
+    {
+        "timestamp": 1474827894256,
+        "seller": "j.link@mail.com",
+        "name": "Rubik's Cube",
+        "description": "This is an awsome Rubik's Cube it has colored faces, no stickers!",
+        "price": 2000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN4KAF3-a1454de1cd/rubik_s_speedcube_720.jpg",
+        "type": "misc",
+        "buyer": null
+    },
+    {
+        "timestamp": 1474827894256,
+        "seller": "rrwallace@ymail.com",
+        "name": "IBM Thinkpad from 2006",
+        "description": "This computer has lasted me a decade it's awsome!",
+        "price": 10000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMZQ8DT-79ff379b3e/ibm_thinkpad_from_2006_720.jpg",
+        "type": "misc",
+        "buyer": null
+
+    },
+    {
+        "timestamp": 1474828216555,
+        "seller": "r.leblanc@mail.com",
+        "name": "Freeflex Stick Umbrella",
+        "description": "A great Umbrella",
+        "price": 10000,
+        "image": "https://files.slack.com/files-pri/T2FEL5FD2-F2FMTT83Y/freeflex_stick_umbrella.jpg",
+        "type": "misc",
+        "buyer": null
+
     }
 ]
