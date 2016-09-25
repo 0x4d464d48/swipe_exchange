@@ -160,7 +160,7 @@ def get_requests(user_email):
         del request["status"]
         
 
-    db.requests.update_many({"listing_timestamp":{ "$in": listing_timestamps}},{"$set":{"status": "2"}})
+    db.requests.update_many({"listing_timestamp":{ "$in": listing_timestamps}},{"$set":{"status": 2}})
      
     return requests
 
@@ -174,6 +174,36 @@ def approve_request(request_timestamp):
 
     #Delete Reqest
     db.requests.delete_many({"listing_timestamp": listing_timestamp})
+
+def update_status(user_email):
+    
+    listing_cursor = db.listings.find({"seller": user_email})
+
+    listing_timestamps = []
+    for listing in listing_cursor:
+        listing_timestamps.append(listing["timestamp"])
+
+    listing_cursor.close()
+
+    request_cursor = db.requests.find({"listing_timestamp":{ "$in": listing_timestamps},{"status" : 0}})
+
+    requests = []
+    request_timestamps = []
+    for request in request_cursor:
+        requests.append(request)
+        request_timestamps.append(requests["request_timestamp"])
+
+    request_cursor.close()
+    
+    for request in requests:
+        del request["_id"]
+        del request["status"]
+        
+
+    db.requests.update_many({"listing_timestamp":{ "$in": listing_timestamps},{"status" : 1}},{"$set":{"status": 0}})
+    db.requests.update_many({"request_timestamp":{ "$in": request_timestamps}},{"$set":{"status": 1}})
+     
+    return requests
 
 
     
