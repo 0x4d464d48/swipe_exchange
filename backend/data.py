@@ -91,7 +91,7 @@ def get_listings(listing_timestamp,seller_email,listing_type,max_price,min_price
     filtered_listings = filter_listings(listings,
             listing_timestamp,seller_email,listing_type,max_price,min_price)
 
-    return process_listings(listings)
+    return process_listings(filtered_listings)
 
 #helper for get_listings
 def filter_listings(listings,listing_timestamp,seller_email,listing_type,max_price,min_price):
@@ -100,20 +100,22 @@ def filter_listings(listings,listing_timestamp,seller_email,listing_type,max_pri
         if listing["buyer"] is not None:
             continue
 
-        if not (listing_timestamp is None) or (listing["timestamp"] == listing_timestamp):
+        if not ((listing_timestamp is None) or (listing["timestamp"] == listing_timestamp)):
             continue
 
-        if not (seller_email is None) or (listing["seller"] == seller_email):
+        if not ((seller_email is None) or (listing["seller"] == seller_email)):
             continue
 
-        if not (listing_type is None) or (listing["type"] == listing_type):
+        if not ((listing_type is None) or (listing["type"] == listing_type)):
             continue
 
-        if not (max_price is None) or (min_price is None) \
-                or listing["price"] > max_price or listing["price"] < min_price["price"]:
+        if not ((max_price is None) or listing["price"] <= max_price):
             continue
 
-        filtered_listings.append(listings)
+        if not ((min_price is None) or listing["price"] > min_price):
+            continue
+
+        filtered_listings.append(listing)
 
     return filtered_listings
 
@@ -163,7 +165,18 @@ def nuke_db():
 if __name__ == "__main__":
     init()
     add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",1000,"soul.jpg","personal items")
-    add_request(1474746464,"mathcurt@gmail.com")
+    add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",2000,"soul.jpg","personal items")
+    add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",3000,"soul.jpg","personal items")
+    add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",4000,"soul.jpg","personal items")
+    add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",5000,"soul.jpg","sadness")
+    add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",6000,"soul.jpg","sadness")
+    add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",7000,"soul.jpg","sadness")
+    add_listing("mathcurt@gmail.com","My soul","I'm selling my soul",8000,"soul.jpg","sadness")
+    add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",9000,"soul.jpg","sadness")
+    add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",10000,"soul.jpg","sadness")
+    add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",12000,"soul.jpg","sadness")
+    add_listing("jeremy.quicklearner@gmail.com","My soul","I'm selling my soul",13000,"soul.jpg","sadness")
+    #add_request(1474746464,"mathcurt@gmail.com")
     #print(get_user_info("jeremy.quicklearner@gmail.com"))
     #print(get_requests("jeremy.quicklearner@gmail.com"))
-    print(get_listings(None,None,None,None,None))
+    print(get_listings(None,"mathcurt@gmail.com","sadness",5000,None))
