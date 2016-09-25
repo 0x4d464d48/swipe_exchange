@@ -113,6 +113,8 @@ $(document).ready(function(){
       $("#swipetrade-view-icon").html("view_module");
       
       $('.swipe').show();
+      $('.slick-prev, .slick-arrow').hide();
+      $('.slick-next, .slick-arrow').hide();
       $('.swipe').slick({
         centerMode: true,
         centerPadding: '60px',
