@@ -500,6 +500,11 @@ textarea.swipetrade-textarea-input {
 .swipetrade-floating-menu > i {
   font-size: 30px;
 }
+@media(max-width: 450px) {
+  .swipetrade-floating-menu {
+    left: -1000px !important;
+  }
+}
 
 #swipetrade-floating-menu-filter {
   right: 200px;
@@ -518,7 +523,7 @@ textarea.swipetrade-textarea-input {
 
 #swipetrade-floating-menu-help {
   right: 0;
-  left: 90%;
+  left: calc(90% - 32px);
 }
 
 #swipetrade-floating-menu-new-post {
