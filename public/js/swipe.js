@@ -7,20 +7,23 @@ $('.swipe').hide();
 // Hide carosel when other tabs are clicked
 $('#browse').click(function() {
 $('.swipe').hide();
+$('#sellerprofile').hide();
 
 });
 $('#post').click(function() {
 $('.swipe').hide();
+$('#sellerprofile').hide();
 
 });
 $('#profile').click(function() {
 $('.swipe').hide();
+$('#sellerprofile').hide();
 
 });
 
 
 $('#swipe').click(function() {
-console.log('HI!');
+$('#sellerprofile').hide();
 $('.swipe').show();
 $('.swipe').slick({
   centerMode: true,
