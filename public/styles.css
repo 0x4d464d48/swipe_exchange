@@ -203,7 +203,7 @@ footer {
   margin-bottom: 24px;
 }
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  background-color: white;
+  background-color: #ABC249;
 }
 .mdl-demo #features section {
   margin-bottom: 72px;
@@ -261,6 +261,7 @@ section.section--center.swipetrade-main-section {
 /* SwipeTrade Filter */
 #swipetrade-filter-card {
   min-height: 0; /* Reset */
+  background-color: #ABC249;
 }
 
 #swipetrade-filter-card > .swipetrade-filter-center {
