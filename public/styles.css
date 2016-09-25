@@ -499,12 +499,13 @@ section.swipetrade-section-post > button.swipetrade-button {
   right: 0;
   padding: 2% 0;
   margin: 1% 0;
-  width: 40%;
+  width: 100%;
+  max-width: 450px;
   height: auto;
   background-color: #8BC34A;
   color: white;
   font-weight: lighter;
-  font-size: 27px;
+  font-size: 24px;
   text-transform: none;
 }
 
