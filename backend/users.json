@@ -3,37 +3,73 @@
         "email": "jeremy.quicklearner@gmail.com",
         "first_name": "Jeremy",
         "last_name": "Lerner",
-        "image": "http://www.imgur.com/badonk",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN2GWLX-9688c4f97f/jeremy_lerner_-_jeremy.quicklearner_gmail.com_720.jpg",
         "location": "Telus Garden",
-        "aggregate_rating": 22,
-        "number_of_ratings": 5
+        "aggregate_rating": 12,
+        "number_of_ratings": 13
     },
     {
-        "email": "quicklearner@gmail.com",
-        "first_name": "Jeremy",
-        "last_name": "Lerner",
-        "image": "http://www.imgur.com/badonk",
+        "email": "rrwallace@ymail.com",
+        "first_name": "Ryan",
+        "last_name": "Wallace",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FL8BEEP-4d1c852044/ryan_wallace_-_rrwallace_ymail.com_720.jpg",
         "location": "Telus Garden",
-        "aggregate_rating": 22,
-        "number_of_ratings": 5
+        "aggregate_rating": 67,
+        "number_of_ratings": 15
     },
     {
-        "email": "jeremy@gmail.com",
-        "first_name": "Jeremy",
-        "last_name": "Lerner",
-        "image": "http://www.imgur.com/badonk",
+        "email": "mathcurt@gmail.com",
+        "first_name": "Curtis",
+        "last_name": "Huebner",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FL8P4H1-0a5d9ffb05/slack_for_ios_upload_720.jpg",
         "location": "Telus Garden",
-        "aggregate_rating": 22,
-        "number_of_ratings": 5
+        "aggregate_rating": 94,
+        "number_of_ratings": 19
     },
     {
-        "email": "jql@gmail.com",
-        "first_name": "Jeremy",
-        "last_name": "Lerner",
-        "image": "http://www.imgur.com/badonk",
+        "email": "derekchan1994@gmail.com",
+        "first_name": "Derek",
+        "last_name": "Chan",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FL9SWUB-1aa07d744d/slack_for_ios_upload_720.jpg",
         "location": "Telus Garden",
-        "aggregate_rating": 22,
-        "number_of_ratings": 5
+        "aggregate_rating": 72,
+        "number_of_ratings": 18
+    },
+    {
+        "email": "dennis_liulinyin@hotmail.com",
+        "first_name": "Dennis",
+        "last_name": "Liu",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMWMNER-33157c5519/537244_10151073041836128_1723428008_n_720.jpg",
+        "location": "Telus Garden",
+        "aggregate_rating": 72,
+        "number_of_ratings": 18
+    },
+    {
+        "email": "j.link@mail.com",
+        "first_name": "Juliette",
+        "last_name": "Link",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN1RV9V-d099a6ea61/juliette_link_-_make_up_an_e-mail_720.jpg",
+        "location": "Telus Garden",
+        "aggregate_rating": 82,
+        "number_of_ratings": 20
+    },
+    {
+        "email": "s.coan@mail.com",
+        "first_name": "Shawna",
+        "last_name": "Coan",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN2Q881-1ce743d9f1/shawna_coan_-_make_up_an_e-mail_720.jpg",
+        "location": "Telus Garden",
+        "aggregate_rating": 62,
+        "number_of_ratings": 13
+    },
+    {
+        "email": "r.leblanc@mail.com",
+        "first_name": "Rita",
+        "last_name": "LeBlanc",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMNJP60-16a6a3481f/rita_leblanc_-_make_up_an_e-mail__720.jpg",
+        "location": "Telus Garden",
+        "aggregate_rating": 62,
+        "number_of_ratings": 13
     }
 ]
 
