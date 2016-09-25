@@ -4,7 +4,8 @@ import logic
 handlers = {
 	"ping":				logic.handle_ping,
 	"get_user":			logic.handle_get_user,
-	"get_request":		logic.handle_get_request,
+	"get_listings":		logic.handle_get_listings,
+	"get_requests":		logic.handle_get_request,
 	"create_listing":	logic.handle_create_listing,
 	"create_request":	logic.handle_create_request
 }
