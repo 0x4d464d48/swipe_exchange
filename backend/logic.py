@@ -12,6 +12,20 @@ def handle_get_user(params):
 		user_email
 	)
 
+def handle_get_listings(params):
+	listing_timestamp = params["listing_timestamp"]
+	seller_email = params["seller_email"]
+	listing_type = params["listing_type"]
+	listing_price_min = params["listing_price_min"]
+	listing_price_max = params["listing_price_max"]
+	return data.get_listings(
+		listing_timestamp,
+		seller_email,
+		listing_type,
+		listing_price_max,
+		listing_price_min,
+	)
+
 def handle_get_request(params):
 	user_email = params["user_email"]
 	return data.get_requests(
