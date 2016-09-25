@@ -5,7 +5,32 @@ $(document).ready(function () {
   $('.slick-next, .slick-arrow').hide();
   $('#sellerprofile').hide();
 
-  $('.swipe').hide();
+  // $('.swipe').hide();
+  $('.swipe').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
   // Hide carosel when other tabs are clicked
   $('#browse').click(function () {
@@ -31,30 +56,6 @@ $(document).ready(function () {
 
     $('#sellerprofile').hide();
     $('.swipe').show();
-    $('.swipe').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
+
   });
 });

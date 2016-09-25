@@ -90,6 +90,50 @@ $(document).ready(function(){
     var href = $(this).attr("href");
     console.log("Derek: Floating menu item #" + $(this).attr('id') + " clicked! Linking to href " + href);
     activateTab(href);
-  })
+    $('.swipe').hide();
+  });
+  
+  $("#swipetrade-floating-menu-view").click(function(e) {
+    var current_active = $('.is-active').attr('id');
+    // console.log("Derek: Currently active: " + current_active);
+    // console.log($(this));
+    
+    if (current_active === "browse") {
+      // console.log("Derek: Changing href to swipe");
+      $("#swipetrade-floating-menu-view").attr("href", "#swipe");
+      
+    } else {
+      // console.log("Derek: Changing href to browse");
+      $("#swipetrade-floating-menu-view").attr("href", "#browse");
+      
+      $('.swipe').show();
+      $('.swipe').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+      
+    }
+  });
     
 });
