@@ -142,6 +142,11 @@ $(document).ready(function(){
     }
   });
     
+  $("#swipetrade-floating-menu-help").click(function(e) {
+    e.preventDefault();
+    console.log("Clicked help");
+    $("#swipetrade-overlay-chat").fadeIn();
+  });
   
   $("#swipetrade-floating-menu-filter").click(function(e) {
     // This prevents the <a> from actually opening a new page
@@ -189,5 +194,5 @@ $(document).ready(function(){
     $(this).fadeOut();
   });
   
-    
+  
 });
