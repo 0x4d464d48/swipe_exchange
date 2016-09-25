@@ -10,7 +10,8 @@ var activateTab = function(id) {
 }
 
 $(document).ready(function(){
-    console.log("Hello!")
+    $("#sellerprofile").hide();
+    console.log("Hello!");
     
     new jQueryCollapse($(".swipetrade-collapsible"), {
         open: function() {
