@@ -426,6 +426,15 @@ section.section--center.swipetrade-main-section {
   font-weight: bold;
 }
 
+.swipetrade-card__remove {
+  text-align: center;
+  background-color: #aef646; /* Consider changing this */
+  color: white;
+  bottom: 0%;
+  height: 20%;
+  width: 100%;
+}
+
 
 /* Seller Profile Button */
 
