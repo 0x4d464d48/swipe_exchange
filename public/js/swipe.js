@@ -1,5 +1,7 @@
 
 $(document).ready(function () {
+$('#sellerprofile').hide();
+
 $('.swipe').hide();
 
 // Hide carosel when other tabs are clicked

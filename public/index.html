@@ -69,6 +69,7 @@
   <script type="text/javascript" src="js/swipe.js"></script>
   <script type="text/javascript" src="js/jquery.collapse.js"></script>
   <script type="text/javascript" src="js/swipetrade.js"></script>
+  <script type="text/javascript" src="js/appdirectory.js"></script>
 </head>
 
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
@@ -86,26 +87,27 @@
         <a href="#post" class="mdl-layout__tab" id="post">Post</a>
         <a href="#profile" class="mdl-layout__tab" id="profile">Profile</a>
         <a href="#swipe" class="mdl-layout__tab" id="swipe">Swipe</a>
-        </div>
-      </header>
-  
-      <main class="mdl-layout__content">
-        
-        
-        <!-- Browse -->
-        
-        
-        <div class="mdl-layout__tab-panel is-active" id="browse">
-          
-          <section class="swipetrade-main-section section--center mdl-grid mdl-shadow--2dp">
-            
-            <div class="mdl-card mdl-cell mdl-cell--12-col" id="swipetrade-filter-card">
-              <div class="swipetrade-filter-center mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="swipetrade-filter-input">
-                <label class="mdl-textfield__label" for="sample1">What are you looking for?</label>
-              </div>
-            
-              <!-- <div class="swipetrade-filter-center swipetrade-collapsible">
+        <a href="#customersupport" class="mdl-layout__tab" id="customersupport">Customer Support</a>
+      </div>
+    </header>
+
+    <main class="mdl-layout__content">
+
+
+      <!-- Browse -->
+
+
+      <div class="mdl-layout__tab-panel is-active" id="browse">
+
+        <section class="swipetrade-main-section section--center mdl-grid mdl-shadow--2dp">
+
+          <div class="mdl-card mdl-cell mdl-cell--12-col" id="swipetrade-filter-card">
+            <div class="swipetrade-filter-center mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="swipetrade-filter-input">
+              <label class="mdl-textfield__label" for="sample1">What are you looking for?</label>
+            </div>
+
+            <!-- <div class="swipetrade-filter-center swipetrade-collapsible">
                 <a href="#" class="swipetrade-filter-center mdl-button ">More Filters</a>
                 <div class="mdl-grid">
                   <div class="mdl-cell mdl-cell--4-col-phone mdl-textfield mdl-js-textfield">
@@ -118,249 +120,254 @@
                   </div>
                 </div>
               </div> -->
-                              
-            </div>
-            
-            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
-              
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
-              <div class="swipetrade-card__image-container">
-                <div class="swipetrade-card-image" style="background-image: url('http://i.imgur.com/9p9tA0o.jpg');">
-                </div>
-              </div>
-              
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <p class="swipetrade-card__cost-text">75 CAD</p>
-                <p class="swipetrade-card__distance-text">Within 300m</p>
-                <p class="swipetrade-card__item-text">Brand New Bike</p>
-              </div>
-              
-              <div class="swipetrade-card__buttons mdl-shadow--3dp">
-                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Contact
-                </a>
-                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Buy Now
-                </a>
-              </div>
-              
-            </div> <!-- swipetrade-card -->
-            
-            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
-              
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
-              <div class="swipetrade-card__image-container">
-                <div class="swipetrade-card-image" style="background-image: url('http://www.devinci.com/archive/2009/hybride/OSLO.jpg');">
-                </div>
-              </div>
-              
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <p class="swipetrade-card__cost-text">250 CAD</p>
-                <p class="swipetrade-card__distance-text">Within 300m</p>
-                <p class="swipetrade-card__item-text">7yr bike from craihgslist</p>
-              </div>
-              
-              <div class="swipetrade-card__buttons mdl-shadow--3dp">
-                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Contact
-                </a>
-                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Buy Now
-                </a>
-              </div>
-              
-            </div> <!-- swipetrade-card -->
-            
-            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
-              
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
-              <div class="swipetrade-card__image-container">
-                <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
-                </div>
-              </div>
-              
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <p class="swipetrade-card__cost-text">400 CAD</p>
-                <p class="swipetrade-card__distance-text">Within 300m</p>
-                <p class="swipetrade-card__item-text">emonda 54cm</p>
-              </div>
-              
-              <div class="swipetrade-card__buttons mdl-shadow--3dp">
-                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Contact
-                </a>
-                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Buy Now
-                </a>
-              </div>
-              
-            </div> <!-- swipetrade-card -->
-              
-          </section>
-        </div>
-        
-        
-        <!-- Post -->
-        
-        
-        <div class="mdl-layout__tab-panel" id="post">
-          <section class="swipetrade-main-section section--center mdl-grid mdl-shadow--2dp">
-            
-            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp mdl-button" style="height:350px" id="add">
-              <i class="material-icons">add</i>
-            </div>
-            
-            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
-              
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
-              <div class="swipetrade-card__image-container">
-                <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
-                </div>
-              </div>
-              
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <p class="swipetrade-card__cost-text">400 CAD</p>
-                <p class="swipetrade-card__distance-text">Within 300m</p>
-                <p class="swipetrade-card__item-text">emonda 54cm</p>
-              </div>
-              
-              <div class="swipetrade-card__buttons mdl-shadow--3dp">
-                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Contact
-                </a>
-                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Buy Now
-                </a>
-              </div>
-              
-            </div> <!-- swipetrade-card -->
-            
-        </section>
-      </div>
-      
-      <div class="mdl-layout__tab-panel" id="post-new">
-        <section class="swipetrade-section-post">
-          
-          <h1>Step 1: what are you selling?</h1>
-          
-          <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Misc Personal Items</button><br>
-          <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Textbook</button><br>
-          <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Housing Rental</button><br>
-          <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Tutoring Services</button>
-          
-      </section>
-    </div>
-    
-    <div class="mdl-layout__tab-panel" id="post-new-upload-img">
-      <section class="swipetrade-section-post">
-        
-        <h1>Step 2: upload an image for what you are selling</h1>
-        
-        <input type="file" id="swipetrade-upload-img-input"></input>
-        <label for="swipetrade-upload-img-input" class="swipetrade-button swipetrade-label-box mdl-button mdl-js-button">Click to upload an image</label>
-        <br>
-        
-        <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-upload-img-back">Back</button>
-        
-        <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-upload-img">Upload</button>
-                
-      </section>
-    </div>
-    
-    <div class="mdl-layout__tab-panel" id="post-new-set-price">
-      <section class="swipetrade-section-post">
-        
-        <h1>Step 3: select a price for what you are selling</h1>
-        
-        <div class="swipetrade-price-input mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="swipetrade-price-input">
-          <label class="mdl-textfield__label" for="sample2">Price</label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        <br>
-        
-        <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-price-back">Back</button>
-        
-        <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-price">Next</button>
-                
-      </section>
-    </div>
-    
-    <div class="mdl-layout__tab-panel" id="post-new-set-description">
-      <section class="swipetrade-section-post">
-        
-        <h1>Step 4: Add some description for what you are selling</h1>
-        
-        <div class="swipetrade-price-input mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" id="swipetrade-description-input">
-          <label class="mdl-textfield__label" for="sample2">Description</label>
-        </div>
-        <br>
-        
-        <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-description-back">Back</button>
-        
-        <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-description">Next</button>
-                
-      </section>
-    </div>
-    
-    <div class="mdl-layout__tab-panel" id="post-new-overview">
-      <section class="swipetrade-section-post">
-        
-        <h1>Here's how your post looks:</h1>
-        
-        <div class="mdl-grid">
-          <!-- Hacky empty cols to center grid -->
-          <div class="mdl-cell mdl-cell--4-col"></div>
+
+          </div>
+
           <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
-            
-            <div class="swipetrade-card__profile">                
-                <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+
+            <div class="swipetrade-card__profile">
+              <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
             </div>
-            
+
+            <div class="swipetrade-card__image-container">
+              <div class="swipetrade-card-image" style="background-image: url('http://i.imgur.com/9p9tA0o.jpg');">
+              </div>
+            </div>
+
+            <div class="swipetrade-card__main-content mdl-shadow--2dp">
+              <p class="swipetrade-card__cost-text">75 CAD</p>
+              <p class="swipetrade-card__distance-text">Within 300m</p>
+              <p class="swipetrade-card__item-text">Brand New Bike</p>
+            </div>
+
+            <div class="swipetrade-card__buttons mdl-shadow--3dp">
+              <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Contact
+                </a>
+              <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Buy Now
+                </a>
+            </div>
+
+          </div>
+          <!-- swipetrade-card -->
+
+          <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
+
+            <div class="swipetrade-card__profile">
+              <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+            </div>
+
+            <div class="swipetrade-card__image-container">
+              <div class="swipetrade-card-image" style="background-image: url('http://www.devinci.com/archive/2009/hybride/OSLO.jpg');">
+              </div>
+            </div>
+
+            <div class="swipetrade-card__main-content mdl-shadow--2dp">
+              <p class="swipetrade-card__cost-text">250 CAD</p>
+              <p class="swipetrade-card__distance-text">Within 300m</p>
+              <p class="swipetrade-card__item-text">7yr bike from craihgslist</p>
+            </div>
+
+            <div class="swipetrade-card__buttons mdl-shadow--3dp">
+              <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Contact
+                </a>
+              <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Buy Now
+                </a>
+            </div>
+
+          </div>
+          <!-- swipetrade-card -->
+
+          <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
+
+            <div class="swipetrade-card__profile">
+              <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+            </div>
+
             <div class="swipetrade-card__image-container">
               <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
               </div>
             </div>
-            
+
             <div class="swipetrade-card__main-content mdl-shadow--2dp">
               <p class="swipetrade-card__cost-text">400 CAD</p>
               <p class="swipetrade-card__distance-text">Within 300m</p>
               <p class="swipetrade-card__item-text">emonda 54cm</p>
             </div>
-            
+
             <div class="swipetrade-card__buttons mdl-shadow--3dp">
               <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Contact
+                </a>
+              <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Buy Now
+                </a>
+            </div>
+
+          </div>
+          <!-- swipetrade-card -->
+
+        </section>
+      </div>
+
+
+      <!-- Post -->
+
+
+      <div class="mdl-layout__tab-panel" id="post">
+        <section class="swipetrade-main-section section--center mdl-grid mdl-shadow--2dp">
+
+          <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp mdl-button" style="height:350px" id="add">
+            <i class="material-icons">add</i>
+          </div>
+
+          <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
+
+            <div class="swipetrade-card__profile">
+              <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+            </div>
+
+            <div class="swipetrade-card__image-container">
+              <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
+              </div>
+            </div>
+
+            <div class="swipetrade-card__main-content mdl-shadow--2dp">
+              <p class="swipetrade-card__cost-text">400 CAD</p>
+              <p class="swipetrade-card__distance-text">Within 300m</p>
+              <p class="swipetrade-card__item-text">emonda 54cm</p>
+            </div>
+
+            <div class="swipetrade-card__buttons mdl-shadow--3dp">
+              <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Contact
+                </a>
+              <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Buy Now
+                </a>
+            </div>
+
+          </div>
+          <!-- swipetrade-card -->
+
+        </section>
+      </div>
+
+      <div class="mdl-layout__tab-panel" id="post-new">
+        <section class="swipetrade-section-post">
+
+          <h1>Step 1: what are you selling?</h1>
+
+          <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Misc Personal Items</button><br>
+          <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Textbook</button><br>
+          <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Housing Rental</button><br>
+          <button class="swipetrade-button swipetrade-button-post-new mdl-button mdl-js-button">Tutoring Services</button>
+
+        </section>
+      </div>
+
+      <div class="mdl-layout__tab-panel" id="post-new-upload-img">
+        <section class="swipetrade-section-post">
+
+          <h1>Step 2: upload an image for what you are selling</h1>
+
+          <input type="file" id="swipetrade-upload-img-input"></input>
+          <label for="swipetrade-upload-img-input" class="swipetrade-button swipetrade-label-box mdl-button mdl-js-button">Click to upload an image</label>
+          <br>
+
+          <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-upload-img-back">Back</button>
+
+          <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-upload-img">Upload</button>
+
+        </section>
+      </div>
+
+      <div class="mdl-layout__tab-panel" id="post-new-set-price">
+        <section class="swipetrade-section-post">
+
+          <h1>Step 3: select a price for what you are selling</h1>
+
+          <div class="swipetrade-price-input mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="swipetrade-price-input">
+            <label class="mdl-textfield__label" for="sample2">Price</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <br>
+
+          <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-price-back">Back</button>
+
+          <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-price">Next</button>
+
+        </section>
+      </div>
+
+      <div class="mdl-layout__tab-panel" id="post-new-set-description">
+        <section class="swipetrade-section-post">
+
+          <h1>Step 4: Add some description for what you are selling</h1>
+
+          <div class="swipetrade-price-input mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="swipetrade-description-input">
+            <label class="mdl-textfield__label" for="sample2">Description</label>
+          </div>
+          <br>
+
+          <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-description-back">Back</button>
+
+          <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-set-description">Next</button>
+
+        </section>
+      </div>
+
+      <div class="mdl-layout__tab-panel" id="post-new-overview">
+        <section class="swipetrade-section-post">
+
+          <h1>Here's how your post looks:</h1>
+
+          <div class="mdl-grid">
+            <!-- Hacky empty cols to center grid -->
+            <div class="mdl-cell mdl-cell--4-col"></div>
+            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
+
+              <div class="swipetrade-card__profile">
+                <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+              </div>
+
+              <div class="swipetrade-card__image-container">
+                <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
+                </div>
+              </div>
+
+              <div class="swipetrade-card__main-content mdl-shadow--2dp">
+                <p class="swipetrade-card__cost-text">400 CAD</p>
+                <p class="swipetrade-card__distance-text">Within 300m</p>
+                <p class="swipetrade-card__item-text">emonda 54cm</p>
+              </div>
+
+              <div class="swipetrade-card__buttons mdl-shadow--3dp">
+                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
                 Contact
               </a>
-              <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
+                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
                 Buy Now
               </a>
+              </div>
+
             </div>
-            
-          </div> <!-- swipetrade-card -->
-          <!-- Hacky empty cols to center grid -->
-          <div class="mdl-cell mdl-cell--4-col"></div> 
-        </div>
-        
-        <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-overview-back">Back</button>
-        
-        <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-overview">Post It!</button>
-                
-      </section>
-    </div>
+            <!-- swipetrade-card -->
+            <!-- Hacky empty cols to center grid -->
+            <div class="mdl-cell mdl-cell--4-col"></div>
+          </div>
+
+          <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-overview-back">Back</button>
+
+          <button class="swipetrade-button swipetrade-button-nobackground mdl-button mdl-js-button" id="swipetrade-button-overview">Post It!</button>
+
+        </section>
+      </div>
 
 
       <!-- Profile -->
@@ -377,7 +384,7 @@
               eu fugiat consectetur elit cillum esse.
             </div>
             <div class="mdl-card__actions">
-              <a href="#" class="mdl-button">Read our features</a>            </div>
+              <a href="#" class="mdl-button">Read our features</a> </div>
           </div>
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
               <i class="material-icons">more_vert</i>
@@ -391,111 +398,126 @@
       </div>
 
 
+      <!-- Customer support -->
+      <div class="mdl-layout__tab-panel" id="customersupport">
+        <p>CUSTOMER SUPPORT WILL GO HERE</p>
+      </div>
+
+      <!-- Seller profile -->
+      <div id="sellerprofile">
+        <p>HELLO WORLD!</p>
+        <button onclick="exitSellerProfile()">Exit User Profile</button>
+      </div>
+
+
       <!-- Swipe Demo -->
 
       <div class="mdl-layout__tab-panel" id="swipe">
         <!-- Leave empty. Carosel below is displayed -->
       </div>
 
-          <div class="swipe">
-           <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
-              
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
-              <div class="swipetrade-card__image-container">
-                <div class="swipetrade-card-image" style="background-image: url('http://i.imgur.com/9p9tA0o.jpg');">
-                </div>
-              </div>
-              
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <p class="swipetrade-card__cost-text">75 CAD</p>
-                <p class="swipetrade-card__distance-text">Within 300m</p>
-                <p class="swipetrade-card__item-text">Brand New Bike</p>
-              </div>
-              
-              <div class="swipetrade-card__buttons mdl-shadow--3dp">
-                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Mark for Later
-                </a>
-                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Buy Now
-                </a>
-              </div>
-              
-            </div> <!-- swipetrade-card -->
-            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
-              
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
-              <div class="swipetrade-card__image-container">
-                <div class="swipetrade-card-image" style="background-image: url('http://www.devinci.com/archive/2009/hybride/OSLO.jpg');">
-                </div>
-              </div>
-              
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <p class="swipetrade-card__cost-text">250 CAD</p>
-                <p class="swipetrade-card__distance-text">Within 300m</p>
-                <p class="swipetrade-card__item-text">7yr bike from craihgslist</p>
-              </div>
-              
-              <div class="swipetrade-card__buttons mdl-shadow--3dp">
-                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Mark for Later
-                </a>
-                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Buy Now
-                </a>
-              </div>
-              
-            </div> <!-- swipetrade-card -->
-            <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
-              
-              <div class="swipetrade-card__profile">                
-                  <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
-              </div>
-              
-              <div class="swipetrade-card__image-container">
-                <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
-                </div>
-              </div>
-              
-              <div class="swipetrade-card__main-content mdl-shadow--2dp">
-                <p class="swipetrade-card__cost-text">400 CAD</p>
-                <p class="swipetrade-card__distance-text">Within 300m</p>
-                <p class="swipetrade-card__item-text">emonda 54cm</p>
-              </div>
-              
-              <div class="swipetrade-card__buttons mdl-shadow--3dp">
-                <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Mark for Later
-                </a>
-                <a class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Buy Now
-                </a>
-              </div>
-              
-            </div> <!-- swipetrade-card -->
+      <div class="swipe">
+        <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
 
-          </div>
+          <div class="swipetrade-card__profile">
+            <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
           </div>
 
-
-
-      <footer class="mdl-mega-footer">
-        <div class="mdl-mega-footer--bottom-section">
-          <div class="mdl-logo">
-            &copy; SwipeTrade 2016
+          <div class="swipetrade-card__image-container">
+            <div class="swipetrade-card-image" style="background-image: url('http://i.imgur.com/9p9tA0o.jpg');">
+            </div>
           </div>
-          <ul class="mdl-mega-footer--link-list">
-            <li><a href="https://github.com/0x4d464d48/swipe_exchange">Source</a></li>
-          </ul>
+
+          <div class="swipetrade-card__main-content mdl-shadow--2dp">
+            <p class="swipetrade-card__cost-text">75 CAD</p>
+            <p class="swipetrade-card__distance-text">Within 300m</p>
+            <p class="swipetrade-card__item-text">Brand New Bike</p>
+          </div>
+
+          <div class="swipetrade-card__buttons mdl-shadow--3dp">
+            <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Mark for Later
+                </a>
+            <a onclick="showSellerProfile()" class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect" id="sell-test">
+                  Buy Now
+                </a>
+          </div>
+
         </div>
-      </footer>
-    </main>
+        <!-- swipetrade-card -->
+        <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
+
+          <div class="swipetrade-card__profile">
+            <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+          </div>
+
+          <div class="swipetrade-card__image-container">
+            <div class="swipetrade-card-image" style="background-image: url('http://www.devinci.com/archive/2009/hybride/OSLO.jpg');">
+            </div>
+          </div>
+
+          <div class="swipetrade-card__main-content mdl-shadow--2dp">
+            <p class="swipetrade-card__cost-text">250 CAD</p>
+            <p class="swipetrade-card__distance-text">Within 300m</p>
+            <p class="swipetrade-card__item-text">7yr bike from craihgslist</p>
+          </div>
+
+          <div class="swipetrade-card__buttons mdl-shadow--3dp">
+            <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Mark for Later
+                </a>
+            <a onclick="showSellerProfile()" class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect" id="sell-test">
+                  Buy Now
+                </a>
+          </div>
+
+        </div>
+        <!-- swipetrade-card -->
+        <div class="swipetrade-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height:350px">
+
+          <div class="swipetrade-card__profile">
+            <img src="images/chick.jpg" class="swipetrade-card__profile-picture">
+          </div>
+
+          <div class="swipetrade-card__image-container">
+            <div class="swipetrade-card-image" style="background-image: url('https://pbs.twimg.com/media/CfWGyOOW8AAXQyO.jpg');">
+            </div>
+          </div>
+
+          <div class="swipetrade-card__main-content mdl-shadow--2dp">
+            <p class="swipetrade-card__cost-text">400 CAD</p>
+            <p class="swipetrade-card__distance-text">Within 300m</p>
+            <p class="swipetrade-card__item-text">emonda 54cm</p>
+          </div>
+
+          <div class="swipetrade-card__buttons mdl-shadow--3dp">
+            <a class="swipetrade-card__mark-for-later mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Mark for Later
+                </a>
+            <a onclick="showSellerProfile()" class="swipetrade-card__buy mdl-button mdl-js-button mdl-js-ripple-effect" id="sell-test">
+                  Buy Now
+                </a>
+          </div>
+
+        </div>
+        <!-- swipetrade-card -->
+
+      </div>
+  </div>
+
+
+
+  <footer class="mdl-mega-footer">
+    <div class="mdl-mega-footer--bottom-section">
+      <div class="mdl-logo">
+        &copy; SwipeTrade 2016
+      </div>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="https://github.com/0x4d464d48/swipe_exchange">Source</a></li>
+      </ul>
+    </div>
+  </footer>
+  </main>
   </div>
   <!-- <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source"
     class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a> -->
