@@ -100,15 +100,13 @@
 			"request_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
 			"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
 			"seller_email": "jeremy.quicklearner@gmail.com",
-			"buyer_email": "mathcurt@gmail.com",
-			"request_is_read": true
+			"buyer_email": "mathcurt@gmail.com"
 		},
 		{
 			"request_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
 			"listing_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>,
 			"seller_email": "jeremy.quicklearner@gmail.com",
-			"buyer_email": "derekchan1994@gmail.com",
-			"request_is_read": false
+			"buyer_email": "derekchan1994@gmail.com"
 		},
 	]
 }
@@ -153,6 +151,25 @@
 	"jsonrpc": "2.0",
 	"id": "id",
 	"result": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>
+}
+
+//Method to approve a request
+//Given a request timestamp, delete the request and set the buyer in the listing to the one from the request
+//REQUEST
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"method": "approve_request",
+	"params": {
+		"request_timestamp": <A BIG INTEGER REPRESENTING THE UNIX TIMESTAMP>
+	}
+}
+
+//RESPONSE
+{
+	"jsonrpc": "2.0",
+	"id": "id",
+	"result": 0
 }
 
 //Notification for testing
