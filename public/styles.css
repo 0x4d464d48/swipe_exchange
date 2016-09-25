@@ -19,6 +19,12 @@ html, body {
   margin: 0;
   padding: 0;
 }
+body.mdl-demo {
+  background-color: #ABC249 !important;
+}
+footer {
+  background-color: #ABC249 !important;
+}
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
@@ -234,24 +240,14 @@ html, body {
 
 /* Header */
 #swipetrade-banner-logo {
-  color: white;
-  font-weight: lighter;
-  font-size: 50px;
-}
-#swipetrade-banner-logo > img {
-  height: 100px;
-  padding: 25px;
+  display: block;
+  background: url("images/banner.png") no-repeat center;
+  height: 200px;
 }
 @media (max-width: 450px) {
-  #swipetrade-banner-row {
-    padding: 0;
-  }
   #swipetrade-banner-logo {
-    font-size: 30px;
-  }
-  #swipetrade-banner-logo > img {
-    height: 70px;
-    padding: 10px;
+    background-size: 100% auto;
+    height: 100px;
   }
 }
 
