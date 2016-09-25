@@ -548,24 +548,24 @@ section.swipetrade-section-post > label.swipetrade-button.swipetrade-label-box {
   background-color: #8BC34A;
 }
 
-*::-webkit-input-placeholder {
+::-webkit-input-placeholder {
     color: #EEEEEE;
     font-weight: lighter;
     text-align: center;
 }
-*:-moz-placeholder {
+:-moz-placeholder {
     /* FF 4-18 */
     color: #EEEEEE;
     font-weight: lighter;
     text-align: center;
 }
-*::-moz-placeholder {
+::-moz-placeholder {
     /* FF 19+ */
     color: #EEEEEE;
     font-weight: lighter;
     text-align: center;
 }
-*:-ms-input-placeholder {
+:-ms-input-placeholder {
     /* IE 10+ */
     color: #EEEEEE;
     font-weight: lighter;
@@ -694,7 +694,7 @@ a.swipetrade-floating-menu {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background: rgba(105, 159, 66, 0.75);
+  background: rgba(105, 159, 66, 0.9);
   z-index: 800;
   
   color: white;
@@ -709,3 +709,21 @@ a.swipetrade-floating-menu {
   right: 0;
   left: 80%;
 }
+
+#swipetrade-overlay > h2 {
+  font-size: 20px;
+}
+
+#swipetrade-overlay > .swipetrade-filter-input {
+  background-color: #8BC34A;
+  padding: 0;
+  width: 40%;
+  text-align: center;
+  border: none;
+  color: white;
+}
+
+#swipetrade-overlay > .swipetrade-filter-input-long {
+  width: 70%;
+}
+
