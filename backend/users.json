@@ -70,6 +70,15 @@
         "location": "Telus Garden",
         "aggregate_rating": 62,
         "number_of_ratings": 13
+    },
+    {
+        "email": "jessica.vo@mail.com",
+        "first_name": "Jessica",
+        "last_name": "Vo",
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FMNJP60-16a6a3481f/rita_leblanc_-_make_up_an_e-mail__720.jpg",
+        "location": "Telus Garden",
+        "aggregate_rating": 46,
+        "number_of_ratings": 13
     }
 ]
 

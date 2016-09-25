@@ -60,5 +60,26 @@
         "type": "misc",
         "buyer": null
 
+    },
+    {
+        "timestamp": 1474829478489,
+        "seller": "jessica.vo@mail.com",
+        "name": "24-Pack of bottled water",
+        "description": "A bunch of water bottles, great for hackathons!",
+        "price": 5000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN1400M-a16d3eae53/24-pack_of_nestle_bottled_water_720.jpg",
+        "type": "misc",
+        "buyer": null
+    },
+    {
+        "timestamp": 1474829838333,
+        "seller": "dennis_liulinyin@hotmail.com",
+        "name": "Swivel Chair",
+        "description": "An awsome swivel chair",
+        "price": 30000,
+        "image": "https://files.slack.com/files-tmb/T2FEL5FD2-F2FN6FH7B-0160c4806a/swivel_chair_720.jpg",
+        "type": "misc",
+        "buyer": null
+
     }
 ]
